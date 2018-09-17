@@ -1,0 +1,98 @@
+row header
+    row navigation
+        column left
+            column logo
+            column location
+        column right
+            row user
+                link * 3
+            row link-group
+                link * 13
+    row headline
+        row main-title
+        row subtitle
+    row search
+        row classification
+            link * 5
+        row search-bar
+    row statement
+        link * 3
+
+row main-body
+    row service
+        column link * 3
+            row picture
+            row title
+            row description
+    row app-extension
+        row title
+            row subtitle
+            row main-title
+        row description
+        row download
+            column left
+                row button * 2
+            column right
+                picture
+    row recommend-area second-hand-house
+        row head
+            column left
+                row main-title
+                row subtitle
+            column right
+                row link
+        row card-group
+            column card * 4
+                row picture
+                    row brief-picture
+                    row price
+                row words
+                    row title
+                    row description
+                row other-information
+    row recommend-area gray housing-estate
+        row head
+            column left
+                row main-title
+                row subtitle
+            column right
+                row link
+        row card-group
+            column card * 3
+                row brief-picture
+                row words
+                    row title
+                    row description
+    row recommend-area new-house
+        row head
+            column left
+                row main-title
+                row subtitle
+            column right
+                row link
+        row card-group
+            column background-card * 3
+                row brief-picture
+                row title
+                row description
+                ...
+    row slogan
+        column left
+            row main-title
+            row subtitle
+        column right
+            row description
+            row query-bar
+
+row footer
+    row more-information
+        column left
+            link * 8
+        column right
+            phone
+    row friendship-link
+        row classification
+            link * 10
+        row link-group
+            link * n
+    row meta-information
