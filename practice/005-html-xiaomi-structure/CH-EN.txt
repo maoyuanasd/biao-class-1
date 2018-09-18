@@ -1,0 +1,89 @@
+行 首屏 row first-screen
+    行 导航 全局 row nav global
+        列 左 链接组 col left link-group
+            链接 * 9 
+        列 右 链接组 col right link-group
+            链接 * 4
+    行 导航 页面 row nav page
+        列 图片 col img
+            logo logo 
+            gif gif
+        列 链接组 link-group
+            链接 * 10
+        列 搜索 search
+            输入框 input-box
+            按钮 button
+    行 导航 分类 row nav category
+        列 左 链接组 col left link-group
+            链接 * 10
+        列 右 轮播 col right slider
+            图片 img
+    行 首屏卡片 row first-screen-card
+        列 左 快速通道 col left shortcut
+            行 * 2 row 
+                列 * 3 col
+        列 右 卡片组 col right card-group 
+            列 * 3 col
+行 主体 row main
+    行 促销区 * n （以搭配为例） row promotion
+        行 头 row head
+            列 左 col left
+                标题 title 
+            列 右 col right
+                链接 * n
+        行 内容 row content
+            列 领队 col leader
+                图 * 2 img
+            列 卡片组 col card-group
+                行 row
+                    列 卡片 * 4 col card
+                        图片 img
+                        标题 title 
+                        价格 price 
+                        评价 evaluate
+                行 row
+                    列 卡片 * 3 col card
+                        图片 img
+                        标题 title 
+                        价格 price 
+                        评价 evaluate
+                    列 分割卡片 col cut-card
+                        行 卡片 row card
+                            列 左 col left
+                                标题 title
+                                价格 price
+                            列 右 col right
+                                图片 img
+                        行 浏览更多 row get-more
+                            列 左 col left
+                                标题 title
+                                副标题 subtitle
+                            列 右 col right
+                                图标 icon
+行 页尾 row footer
+    行 售后 row support
+        列 链接 * 5 col link
+            图标 icon
+            文字 text
+    行 常规链接 row regular
+        列 左 col left
+            列 * 6 col
+                行 标题 row title
+                链接组 link-group
+                    链接 * 3
+        列 右 客服 col right contact
+            电话 tel
+            描述 description
+            按钮 button
+    行 元信息 col meta-information
+        列 左 logo col left logo
+            图片 img
+        列 中 col middle
+            行 链接组 row link-group
+                链接 * 14
+            行 文字 row text
+        列 右 col right
+            链接组 link-group
+                图片 * 5 img
+    行 slogan row slogan
+        文字 text

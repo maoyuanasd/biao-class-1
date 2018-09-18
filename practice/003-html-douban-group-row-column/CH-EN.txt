@@ -1,0 +1,42 @@
+行 导航 全局 row nav global
+    列 链接组 左 col link-group left
+        列 链接 * 10 
+    列 链接组 右 col link-group right
+        列 链接 * 4
+
+行 主体 row main
+    行 导航 页面 row nav page
+        列 logo col logo
+        列 链接组 col link-group
+            列 链接 * 7
+        列 搜索框 col search
+    行 内容 row content
+        行 标题 row title
+        行  row 
+            列 精选 col selected
+                行 精选预览 * n row sel-preview
+                    列 喜欢 col like
+                    列 文章 col article
+                        行 文章题目 row art-title
+                        行 文章预览 row art-preview
+                        行 其他信息 row more-info
+                            列 来源 col from
+                            列 时间 col time
+                行 页面跳转 row page-jump
+                    列 链接 * n
+            列 推荐 col recommend
+                行 提示 row prompt
+                行 推荐预览 * n row rec-preview
+                    列 图片 col img 
+                    列 小组 col group
+                        行 小组名称 row group-name
+                        行 其他信息 row more-info
+                            列 组员数目 col member-num
+                            列 加入链接 col join-link
+                行 广告 row ad
+                    行 图片链接 * 1
+
+行 页脚 row footer
+    列 元信息 col meta-info
+    列 链接组 col link-group
+        列 链接 * 7
