@@ -1,0 +1,35 @@
+<!--
+https://blog.csdn.net/weixin_36185028/article/details/52739947
+
+当选择器使用标签名多用后代时，对于后代选择器，会作用到子代和子代所有与其相同标签名的子级；
+对于子选择器，只作用到子代而不会作用子代任何的子级。
+
+当选择器使用class名时，对于后代选择器，会作用到子代和子代所有与其相同class名的子级，如果没有与其class名相同的子级，则只作用到子代；
+对于子选择器，仍旧只作用到子代而不会作用子代任何的子级。
+-->
+
+<style>
+    div {
+        padding: 10px;
+    }
+    
+    #grandpa > div {
+        border: 1px solid black;
+    }
+</style>
+
+<div id="grandpa">
+    我是爷爷
+    <div>
+        我是爸爸
+        <div>
+            我是儿子
+        </div>
+    </div>
+    <div>
+        我是爸爸
+        <div>
+            我是儿子
+        </div>
+    </div>
+</div>

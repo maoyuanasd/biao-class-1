@@ -1,0 +1,13 @@
+<style>
+.highlight { background: pink; }
+.bordered { border: 2px solid #000; }
+        
+/* 选中同时拥有highlight类和bordered类的元素，注意选择器之间没有空格 */
+.highlight.bordered {
+  font-size: 200%;
+}
+</style>
+        
+<p class="bordered">我是第一段</p>
+<p class="highlight">我是第三段</p>
+<p class="highlight bordered">我是第三段</p>
