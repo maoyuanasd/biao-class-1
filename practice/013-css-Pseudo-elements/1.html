@@ -1,0 +1,38 @@
+<style>
+    table {
+        border-collapse: collapse; /*边框会合并为一个单一的边框*/
+    }
+
+    td,th {
+        border: 1px solid black;
+    }
+
+    td:last-of-type::before {
+        content: "¥";
+    }
+
+    td:first-of-type::after {
+        content: "啊";
+    }
+</style>
+
+<table>
+    <thead>
+        <th>名称</th>
+        <th>价格</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>早饭</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>午饭</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>晚饭</td>
+            <td>87</td>
+        </tr>
+    </tbody>
+</table>
