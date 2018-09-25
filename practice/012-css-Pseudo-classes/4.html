@@ -1,0 +1,27 @@
+<style>
+    .item:not(a) { /*:not()括号中填写选择器，指定不被某个选择器选择的所有元素；例如:not(a)会选中除<a>在外的所有元素。*/
+        color: red;
+    }
+
+    span:only-child { /*用于选中没有兄弟的元素，即它是它父级元素的唯一子元素。*/
+        font-size: 200%;
+    }
+</style>
+
+<a href="" class="item">fj</a>
+<a href="">fjfj</a>
+<a href="">fjfjfj</a>
+<a href="">fjfjfjfj</a>
+<br>
+<span>fj</span>
+<span class="item">fjfj</span>
+<span class="item">fjfjfj</span>
+<span>fjfjfjfj</span>
+
+<div>
+    <span>ycy</span>
+    <span>ycy</span>
+</div>
+<div>
+    <span>fj</span>
+</div>
