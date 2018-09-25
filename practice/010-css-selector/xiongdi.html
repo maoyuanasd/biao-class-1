@@ -1,0 +1,24 @@
+<style>
+        div { padding: 10px; /*层级直观*/ }
+      
+        #grandpa > div { /*子选择*/
+          border: 2px solid #000;
+          color: red;
+        }
+      </style>
+      
+      <div id="grandpa">
+        我是爷爷
+        <div>
+          我是爸爸
+          <div>
+            我是儿子
+          </div>
+        </div>
+        <div>
+          我是爸爸
+          <div>
+            我是儿子
+          </div>
+        </div>
+      </div>
