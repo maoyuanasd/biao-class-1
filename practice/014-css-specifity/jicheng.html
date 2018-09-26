@@ -1,0 +1,42 @@
+<style>
+    .grandpa {
+        font-size: 20px;
+    }
+
+    .pa {
+        color: red;
+    }
+
+    /*
+    * {
+        font-size: 10px;
+        color: black;
+    }
+    */
+
+    p {
+        color: aquamarine;
+    }
+
+    a { /*继承样式的权重极低，它不但比全局选择器*低，甚至比默认样式更低，所以需要指定inherit*/
+        color: inherit;
+    }
+
+</style>
+
+<div class="great-grandpa">
+    曾祖父
+    <div class="grandpa">
+        祖父
+        <div class="pa">
+            父亲
+            <div class="baby">
+                儿子
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+    你好，我是<a href="#">链接</a>
+</p>
