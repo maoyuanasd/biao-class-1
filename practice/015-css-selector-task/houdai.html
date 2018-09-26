@@ -1,0 +1,22 @@
+<style>
+    .bordered {
+        border: 1px black solid;
+    }
+    .c {
+        color: tomato;
+    }
+    .a .bordered.c{
+        border: 1px tomato solid;
+    }
+</style>
+
+<div class="a bordered">
+    A
+    <div class="b">
+        B
+        <div class="c bordered">C</div>
+        <div class="c">C</div>
+        <div class="c">C</div>
+    </div>
+</div>
+
