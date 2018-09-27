@@ -1,0 +1,25 @@
+<style>
+    #parent {
+        border: solid black;
+        width: 200px;;
+    }
+    #a,#b {
+        width: 50%;
+        height: 100px;
+        display: inline-block;
+        box-sizing: border-box; /*宽度从边框算起*/
+    }
+    #a {
+        background: #bbb;
+        border: dashed blue 10px;
+    }
+    #b {
+        background: #777;
+    }
+</style>
+
+<div id="parent">
+    <div id="a">A</div><!--
+    此处的注释是为了清除两个元素间的断行，因为行内块元素会渲染它们之间的空白字符
+    --><div id="b">B</div>
+</div>

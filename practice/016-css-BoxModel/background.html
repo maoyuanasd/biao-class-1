@@ -1,0 +1,23 @@
+<style>
+    p {
+        border: 10px solid rgba(236,159, 159,30%);
+    }
+    /*背景的作用范围横跨内容区、内边距和边框，且边框也是画在背景上的。*/
+    .a {
+        background: blue;
+    }
+    .b {
+        background: url(http://public.biaoyansu.com/bg-light-flower.png);
+    }
+    .c {
+        background: url(http://public.biaoyansu.com/bg-light-flower.png) no-repeat;
+    }
+    .d {
+        background: url(http://public.biaoyansu.com/bg-light-flower.png) no-repeat center/50%;
+    }
+</style>
+
+<p class="a">A</p>
+<p class="b">B</p>
+<p class="c">C</p>
+<p class="d">D</p>
