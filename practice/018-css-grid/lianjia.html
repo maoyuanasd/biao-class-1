@@ -1,0 +1,228 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .row {
+        border: thin lightgray solid;
+        margin: 5px;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12
+    {
+        float: left;
+        border: thin lightgray solid;
+    }
+
+    .col-1 {
+        width: 8.333333%;
+    }
+    .col-2{
+        width: 16.666667%;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: 33.333333%;
+    }
+    .col-5 {
+        width: 41.666667%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.333333%;
+    }
+    .col-8 {
+        width: 66.666667%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.333333%;
+    }
+    .col-11 {
+        width: 91.666667%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    .row::before,
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .left {
+        text-align: left;
+    }
+    
+    .right {
+        text-align: right;
+    }
+
+    .wrapper {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        border: thin lightgray solid;
+    }
+    
+    .header .title {
+        padding: 20px 150px 0 150px;
+    }
+
+    .header .search {
+        padding: 0 150px 20px 150px;
+    }
+
+    .server .card {
+        padding: 30px;
+    }
+
+    .header .title,
+    .header .search {
+        text-align: center;
+    }
+
+    .main .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .main-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .ershou .card,
+    .xiaoqu .card,
+    .xinfang .card {
+        padding: 20px;
+    }
+</style>
+
+<div class="row header">
+    <div class="row nav">
+        <div class="left col-3">
+            <div class="logo col-6">logo</div>
+            <div class="location col-6">位置</div>
+        </div>
+        <div class="right col-9">
+            <div class="row user">登录注册</div>
+            <div class="row link-group">链接组</div>
+        </div>
+    </div>
+    <div class="row title">
+        <div class="row main-title">连接每个家的故事</div>
+        <div class="row sub-title">真实租房10000套</div>
+    </div>
+    <div class="row search">
+        <div class="row link-group">链接组</div>
+        <div class="row searchbar">
+            <input type="text">
+        </div>
+    </div>
+    <div class="row statement">声明3个</div>
+</div>
+<br>
+<div class="row main">
+    <div class="row server">
+        <div class="card col-4">找二手房</div>
+        <div class="card col-4">地图找房</div>
+        <div class="card col-4">房屋估价</div>
+    </div>
+    <div class="row app">
+        <div class="col-6">
+            <div class="row main-title">为你为家</div>
+            <div class="row desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusantium molestias sit blanditiis delectus voluptas itaque consectetur ratione architecto cumque? Veritatis culpa porro magni neque placeat eaque iusto soluta repellendus.</div>
+            <div class="row download">
+                <div class="oslink col-4">
+                    <div class="row">Iphone</div>
+                    <div class="row">Android</div>
+                </div>
+                <div class="pic col-3">二维码</div>
+            </div>
+        </div>
+    </div>
+    <div class="row ershou">
+        <div class="row title">二手好房</div>
+        <div class="row sub-title">
+            <div class="left col-8">aaaaaa</div>
+            <div class="right col-4">bbbbbb</div>
+        </div>
+        <div class="row card-group">
+            <div class="card col-3">aaa</div>
+            <div class="card col-3">aaa</div>
+            <div class="card col-3">aaa</div>
+            <div class="card col-3">aaa</div>
+        </div>
+    </div>
+    <div class="row xiaoqu">
+        <div class="row title">小区</div>
+        <div class="row sub-title">
+            <div class="left col-8">aaaaaa</div>
+            <div class="right col-4">bbbbbb</div>
+        </div>
+        <div class="row card-group">
+            <div class="card col-4">aaa</div>
+            <div class="card col-4">aaa</div>
+            <div class="card col-4">aaa</div>
+        </div>
+    </div>
+    <div class="row xinfang">
+        <div class="row title">新房</div>
+        <div class="row sub-title">
+            <div class="left col-8">aaaaaa</div>
+            <div class="right col-4">bbbbbb</div>
+        </div>
+        <div class="row card-group">
+            <div class="card col-4">aaa</div>
+            <div class="card col-4">aaa</div>
+            <div class="card col-4">aaa</div>
+        </div>
+    </div>
+    <div class="row promise">
+        <div class="row">
+            <div class="main-title col-6">真实房源</div>
+            <div class="col-6">
+                <div class="row desc">承诺aaaaaa</div>
+                <div class="row query">
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row footer">
+    <div class="row more">
+        <div class="left col-9">链接组</div>
+        <div class="right col-3">客服电话</div>
+    </div>
+    <div class="row friendlink">
+        <div class="row">链接组</div>
+        <div class="row">链接组</div>
+    </div>
+    <div class="row meta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel velit doloremque consequuntur ipsum cum iusto alias culpa nihil numquam tempora perferendis amet est delectus repellendus quod voluptatum, quaerat minus incidunt?</div>
+</div>
