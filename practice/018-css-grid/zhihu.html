@@ -1,0 +1,449 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f6f6f6
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .row {
+        /* border: thin lightgray solid; */
+        padding: 5px;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12
+    {
+        float: left;
+        /* border: thin lightgray solid; */
+    }
+
+    .col-1 {
+        width: 8.333333%;
+    }
+    .col-2{
+        width: 16.666667%;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: 33.333333%;
+    }
+    .col-5 {
+        width: 41.666667%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.333333%;
+    }
+    .col-8 {
+        width: 66.666667%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.333333%;
+    }
+    .col-11 {
+        width: 91.666667%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    .row::before,
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .left {
+        text-align: left;
+    }
+    
+    .right {
+        text-align: right;
+    }
+
+    .wrapper {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: thin lightgray solid; */
+    }
+
+    .nav {
+        background: #ffffff;
+        padding: 15px;
+    }
+
+    .content > div,
+    .other > div {
+        margin: 10px 5px;
+        padding: 10px;
+        background: #ffffff;
+    }
+
+    .content .pic,
+    .content .text {
+        margin: 0;
+    }
+
+    .other .link-group a {
+        display: block;
+        padding: 10px;
+    }
+</style>
+
+<head>
+    <div class="row nav">
+        <div class="wrapper">
+            <div class="left col-4">链接组</div>
+            <div class="mid col-4">搜索</div>
+            <div class="right col-4">链接组</div>
+        </div>
+    </div>
+</head>
+<main>
+    <div class="wrapper">
+        <div class="content col-8">
+            <div class="row activity">
+                <div class="left col-10">链接组</div>
+                <div class="right col-2">草稿</div>
+            </div>
+            <div class="row hot-content">
+                <div class="row from">
+                    <div class="col left">
+                        <span>热门内容，来自</span>
+                        <a href="https://www.zhihu.com/topic/19552706/hot">运动</a>
+                    </div>
+                    <div class="col right">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="row user">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">波尔津吉斯</a>
+                    <span>，NBA 纽约尼克斯队球员</span>
+                </div>
+                <div class="row title">
+                    <a href="#">跑步和游泳哪种健身方式更好？</a>
+                </div>
+                <div class="row content">
+                    <div class="pic col-4">
+                        <a href="#">
+                            <img src="" alt="picture">
+                        </a>
+                    </div>
+                    <div class="text col-8">
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem saepe cum expedita quaerat corporis voluptatibus dignissimos odit cumque tempora recusandae mollitia eos quis voluptas nam nemo, ex, aliquid voluptate.</span>
+                        <a href="#">阅读全文</a>
+                    </div>
+                </div>
+                <div class="row others">
+                    <button>赞同 7.4K</button>
+                    <button></button>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>1,361条评论</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>分享</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>收藏</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>感谢</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row hot-content">
+                <div class="row from">
+                    <div class="col left">
+                        <span>热门内容，来自</span>
+                        <a href="https://www.zhihu.com/topic/19552706/hot">运动</a>
+                    </div>
+                    <div class="col right">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="row user">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">波尔津吉斯</a>
+                    <span>，NBA 纽约尼克斯队球员</span>
+                </div>
+                <div class="row title">
+                    <a href="#">跑步和游泳哪种健身方式更好？</a>
+                </div>
+                <div class="row content">
+                    <div class="pic col-4">
+                        <a href="#">
+                            <img src="" alt="picture">
+                        </a>
+                    </div>
+                    <div class="text col-8">
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem saepe cum expedita quaerat corporis voluptatibus dignissimos odit cumque tempora recusandae mollitia eos quis voluptas nam nemo, ex, aliquid voluptate.</span>
+                        <a href="#">阅读全文</a>
+                    </div>
+                </div>
+                <div class="row others">
+                    <button>赞同 7.4K</button>
+                    <button></button>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>1,361条评论</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>分享</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>收藏</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>感谢</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row hot-content">
+                <div class="row from">
+                    <div class="col left">
+                        <span>热门内容，来自</span>
+                        <a href="https://www.zhihu.com/topic/19552706/hot">运动</a>
+                    </div>
+                    <div class="col right">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="row user">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">波尔津吉斯</a>
+                    <span>，NBA 纽约尼克斯队球员</span>
+                </div>
+                <div class="row title">
+                    <a href="#">跑步和游泳哪种健身方式更好？</a>
+                </div>
+                <div class="row content">
+                    <div class="pic col-4">
+                        <a href="#">
+                            <img src="" alt="picture">
+                        </a>
+                    </div>
+                    <div class="text col-8">
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem saepe cum expedita quaerat corporis voluptatibus dignissimos odit cumque tempora recusandae mollitia eos quis voluptas nam nemo, ex, aliquid voluptate.</span>
+                        <a href="#">阅读全文</a>
+                    </div>
+                </div>
+                <div class="row others">
+                    <button>赞同 7.4K</button>
+                    <button></button>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>1,361条评论</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>分享</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>收藏</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>感谢</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row hot-content">
+                <div class="row from">
+                    <div class="col left">
+                        <span>热门内容，来自</span>
+                        <a href="https://www.zhihu.com/topic/19552706/hot">运动</a>
+                    </div>
+                    <div class="col right">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="row user">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">波尔津吉斯</a>
+                    <span>，NBA 纽约尼克斯队球员</span>
+                </div>
+                <div class="row title">
+                    <a href="#">跑步和游泳哪种健身方式更好？</a>
+                </div>
+                <div class="row content">
+                    <div class="pic col-4">
+                        <a href="#">
+                            <img src="" alt="picture">
+                        </a>
+                    </div>
+                    <div class="text col-8">
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem saepe cum expedita quaerat corporis voluptatibus dignissimos odit cumque tempora recusandae mollitia eos quis voluptas nam nemo, ex, aliquid voluptate.</span>
+                        <a href="#">阅读全文</a>
+                    </div>
+                </div>
+                <div class="row others">
+                    <button>赞同 7.4K</button>
+                    <button></button>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>1,361条评论</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>分享</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>收藏</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>感谢</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="other col-4">
+            <div class="row servece">
+                <a href="#" class="card">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="text">Live</div>
+                </a>
+                <a href="#" class="card">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="text">书店</div>
+                </a>
+                <a href="#" class="card">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="text">圆桌</div>
+                </a>
+                <a href="#" class="card">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="text">专栏</div>
+                </a>
+                <a href="#" class="card">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="text">付费咨询</div>
+                </a>
+            </div>
+            <div class="row link-group">
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">我的收藏</span>
+                    <span class="num">20</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">我关注的问题</span>
+                    <span class="num">166</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">我的邀请</span>
+                    <span class="num">314</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">我的余额</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">社区服务中心</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">版权服务中心</span>
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="name">公共编辑动态</span>
+                </a>
+            </div>
+            <div class="row ad">
+                <a href=""><img src="" alt="广告"></a>
+            </div>
+            <div class="row meta-info">
+                <div class="row">
+                    <a href="https://liukanshan.zhihu.com/" target="_blank">刘看山</a>
+                    <span>·</span>
+                    <a href="https://www.zhihu.com/question/19581624" target="_blank">知乎指南</a>
+                    <span>·</span>
+                    <a href="https://www.zhihu.com/terms" target="_blank">知乎协议</a>
+                    <span>·</span>
+                    <a href="https://www.zhihu.com/terms/privacy" target="_blank">隐私政策</a>
+                </div>
+                <div class="row">
+                    <a href="">应用</a>
+                    <span>·</span>
+                    <a href="">工作</a>
+                    <span>·</span>
+                    <a href="">申请开通知乎机构号</a>
+                </div>
+                <div class="row">
+                    <a href="">侵权举报</a>
+                    <span>·</span>
+                    <a href="">网上有害信息举报专区</a>
+                </div>
+                <div class="row">
+                    <span>违法和不良信息举报：010-82716601</span>
+                </div>
+                <div class="row">
+                    <a href="">儿童色情信息举报专区</a>
+                </div>
+                <div class="row">
+                    <a href="">电信与服务业务经营许可证</a>
+                </div>
+                <div class="row">
+                    <a href="">网络文化经营许可证</a>
+                </div>
+                <div class="row">
+                    <a href="">联系我们</a>
+                    <span>© 2018 知乎</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
