@@ -1,0 +1,25 @@
+.sidebar{
+    background: #5b5b8a;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 20px 80px;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content {
+    float: right;
+}
