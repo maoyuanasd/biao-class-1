@@ -1,0 +1,115 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #999;
+    }
+
+    .wrapper {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    .row::before,
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .nav {
+        background: white;
+        color: #aaaaaa;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .nav a {
+        display: inline-block;
+        color: inherit;
+        font-weight: 300;
+    }
+
+    .nav .logo {
+        margin-top: 10px;
+    }
+
+    .nav .logo img {
+        width: 40px;
+        height: 40px;;
+    }
+
+    .nav .user {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .nav .user a {
+        padding: 0 15px;
+    }
+    .nav .user img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+
+    .nav .link-group {
+        line-height: 60px;
+    }
+
+    .nav .link-group a {
+        padding: 0 20px;
+    }
+
+    .nav .link-group a:hover {
+        color: red;
+        border-bottom: 2px red solid;
+    }
+</style>
+
+<div class="row nav">
+    <div class="wrapper">
+        <div class="col col-3 logo">
+            <a href="">
+                <img src="../10.6/img/oneplus-logo.jpg" alt="logo">
+            </a>
+        </div>
+        <div class="col col-6 link-group">
+            <a href="">OnePlus 6</a>
+            <a href="">商城</a>
+            <a href="">服务</a>
+            <a href="">博客</a>
+            <a href="">论坛</a>
+        </div>
+        <div class="col col-3 user">
+            <a href="">
+                <img src="../10.6/img/oneplus-user.png" alt="">
+            </a>
+            <a href="">
+                <img src="../10.6/img/oneplus-shopping.png" alt="">
+            </a>
+            <a href="">
+                <img src="../10.6/img/oneplus-search.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>

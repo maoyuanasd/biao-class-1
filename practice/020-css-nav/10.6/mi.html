@@ -1,0 +1,136 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f6f6f6;
+        font-family: sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .col-1 {
+        width: 8.333333%;
+    }
+    .col-2{
+        width: 16.666667%;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: 33.333333%;
+    }
+    .col-5 {
+        width: 41.666667%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.333333%;
+    }
+    .col-8 {
+        width: 66.666667%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.333333%;
+    }
+    .col-11 {
+        width: 91.666667%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .row::before,
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .wrapper {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav {
+        background: #333;
+        color: #b0b0ad;
+    }
+
+    .nav a,
+    .btn {
+        display: inline-block;
+        color: inherit;
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    .nav a::after {
+        content: '';
+        display: inline-block;
+        height: 0.8em;
+        width: 1px;
+        background: #777;
+        position: relative;
+        left: 8px;;
+    }
+
+    .nav a:last-of-type::after {
+        display: none;
+    }
+
+    .nav a:hover {
+        color: white;
+    }
+
+    .nav .btn {
+        background: #666;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        outline: 0;
+    }
+
+</style>
+
+<div class="row nav">
+    <div class="wrapper">
+        <div class="col left col-8">
+            <a href="">小米商城</a>
+            <a href="">MIUI</a>
+            <a href="">IoT</a>
+            <a href="">云服务</a>
+            <a href="">金融</a>
+            <a href="">有品</a>
+            <a href="">小爱开放平台</a>
+            <a href="">政企服务</a>
+            <a href="">Select Region</a>
+        </div>
+        <div class="col right col-4">
+            <a href="">登陆</a>
+            <a href="">注册</a>
+            <a href="">消息通知</a>
+            <button class="btn">购物车</button>
+        </div>
+    </div>
+
+</div>
