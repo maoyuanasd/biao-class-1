@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+.col-2{
+    width: 16.666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666667%;
+}
+.col-12 {
+    width: 100%;
+}
+
+.col {
+    float: left;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::before,
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.right {
+    text-align: right;
+}
+
+.nav.global {
+    background: #545652;
+    padding: 0 10px;
+}
+
+.nav.global a {
+    color: #d5d5d3;
+    padding: 6px 8px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.nav.global a:hover {
+    color: white;
+}
+
+.nav.page {
+    background: #f0f6f3;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.nav.page a,
+.main a,
+.footer a {
+    color: #09829e;
+}
+
+.nav.page .logo {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.nav.page .link-group a {
+    padding: 0 10px;
+}
+
+.nav.page input {
+    margin-top: 26px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.content {
+    color: #666;
+}
+
+.content .title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.content .discuss-pre {
+    margin-bottom: 15px;
+}
+
+.content .discuss .like {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #fae9da;
+    color: orangered;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.content .discuss .like .text {
+    position: relative;
+    top: 9px;
+}
+
+.content .discuss .article {
+    font-size: 13px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+
+.content .discuss .art-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.content .discuss .art-preview {
+    background: #f9f9f9;
+    line-height: 1.4em;
+}
+
+.content .discuss .pic {
+    position: relative;
+    top: 10px;
+    left: 18px;
+}
+
+.content .discuss .more-info {
+    margin: 10px 0;
+}
+
+.content .discuss .more-info a {
+    color: #545652;
+    margin-right: 15px;
+}
+
+.content .group {
+    font-size: 14px;
+}
+
+.content .group .prompt {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.content .group .group-pre {
+    margin-bottom: 5px;
+    border-top: solid 1px #cccccc;
+    padding: 8px 0;
+    line-height: 1.7em;
+}
+
+.content .group .pic {
+    position: relative;
+    top: 5px;
+}
+
+.content .group .member-num {
+    margin-right: 10px;;
+}
+
+.content .group .ad {
+    margin-top: 20px;
+    position: relative;
+}
+
+.content .group .ad img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.footer .wrapper {
+    border-top: 1px dashed #cccccc;
+    padding-top: 5px;
+}
+
+.discuss > div,
+.group > div {
+    margin-right: 40px;
+}
+
+.content .group .ad .text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding: 2px 5px;
+}
+
+.footer .link-group a {
+    padding: 0 3px;
+}
+.footer .link-group a::after {
+    content: '';
+    display: inline-block;
+    height: 0.1em;
+    width: 2px;
+    background: #09829e;
+    position: relative;
+    left: 6px;
+    top: -4px;
+}
+
+.footer .link-group a:last-of-type::after {
+    display: none;
+}
