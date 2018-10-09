@@ -13,6 +13,10 @@ a {
     display: inline-block;
 }
 
+form {
+    margin: 0;
+}
+
 .col-1 {
     width: 8.333333%;
 }
@@ -95,10 +99,17 @@ a {
 }
 
 .nav.page a,
-.main a,
+.content a,
 .footer a {
     color: #09829e;
 }
+
+.nav.page .link-group a:hover,
+.content a:hover,
+.footer a:hover {
+    color: white;
+    background: #09829e;
+} 
 
 .nav.page .logo {
     font-size: 30px;
@@ -109,10 +120,27 @@ a {
     padding: 0 10px;
 }
 
+.nav.page .search {
+    position: relative;
+    margin-top: 23px;
+}
+
 .nav.page input {
-    margin-top: 26px;
-    margin-left: 10px;
-    width: 200px;
+    width: 250px;
+    outline: none;
+    padding: 5px 15px;
+    border: thin lightgray solid;
+}
+
+.nav.page .search button {
+    padding: 3px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: transparent;
+    top: 2px;
+    left: 200px;
+    color: lightgray;
 }
 
 .content {
@@ -121,7 +149,7 @@ a {
 
 .content .title {
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .content .discuss-pre {
@@ -129,19 +157,12 @@ a {
 }
 
 .content .discuss .like {
-    float: left;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
     background: #fae9da;
-    color: orangered;
+    color: #ca6445;
     text-align: center;
     font-size: 12px;
-    margin-right: 20px;
-}
-
-.content .discuss .like .text {
-    position: relative;
-    top: 9px;
+    padding: 8px 10px;
 }
 
 .content .discuss .article {
@@ -166,6 +187,10 @@ a {
     left: 18px;
 }
 
+.content .discuss .abstract p {
+    padding-right: 12px;
+}
+
 .content .discuss .more-info {
     margin: 10px 0;
 }
@@ -175,6 +200,10 @@ a {
     margin-right: 15px;
 }
 
+.content .discuss .more-info a:hover {
+    color: white;
+    background: #09829e;
+}
 .content .group {
     font-size: 14px;
 }
@@ -185,10 +214,13 @@ a {
 }
 
 .content .group .group-pre {
-    margin-bottom: 5px;
-    border-top: solid 1px #cccccc;
-    padding: 8px 0;
+    border-bottom: solid 1px #cccccc;
+    padding: 14px 0;
     line-height: 1.7em;
+}
+
+.content .group .prompt + div {
+    border-top: solid 1px #cccccc;    
 }
 
 .content .group .pic {
@@ -201,7 +233,7 @@ a {
 }
 
 .content .group .ad {
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -235,15 +267,13 @@ a {
 .footer .link-group a {
     padding: 0 3px;
 }
+
 .footer .link-group a::after {
-    content: '';
+    content: '·';
+    color: #09829e;
     display: inline-block;
-    height: 0.1em;
-    width: 2px;
-    background: #09829e;
     position: relative;
     left: 6px;
-    top: -4px;
 }
 
 .footer .link-group a:last-of-type::after {
