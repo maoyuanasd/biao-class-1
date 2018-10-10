@@ -1,0 +1,39 @@
+<!--
+    inline inline-block 计入空格
+    解决：
+    1 html里不断行
+    2 html里断行注释掉
+    3 font-size设置为0
+-->
+
+<style>
+    .row {
+        font-size: 0;
+    }
+
+    .inline-block {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .pink {
+        background: pink;
+        width: 20%;
+    }
+
+    .blue {
+        background: royalblue;
+        width: 30%;
+    }
+
+    .yellow {
+        background: lightyellow;
+        width: 50%;
+    }
+</style>
+
+<div class="row">
+    <div class="inline-block pink">A</div>
+    <div class="inline-block blue">B</div>
+    <div class="inline-block yellow">C</div>
+</div>

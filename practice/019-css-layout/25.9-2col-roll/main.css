@@ -1,0 +1,21 @@
+.nav {
+    padding: 10px;
+    background: pink;
+}
+
+.content > * {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    top: 40px;
+    overflow: auto;
+}
+
+.content .blue {
+    background: royalblue;
+}
+
+.content .yellow {
+    background: lightyellow;
+    right: 0;
+}
