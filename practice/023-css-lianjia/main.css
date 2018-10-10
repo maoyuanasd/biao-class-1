@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+.col-2{
+    width: 16.666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666667%;
+}
+.col-12 {
+    width: 100%;
+}
+
+.col {
+    float: left;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.row::before,
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.first-screen {
+    color: white;
+    background: url(./img/first-screen-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    /* background: #555; */
+    margin-top: 30px;
+}
+
+.nav a {
+    color: inherit;
+}
+
+.nav .nav-left {
+    width: 20%;
+}
+
+.nav .nav-right {
+    width: 80%;
+}
+
+.nav .link-group a {
+    padding: 3px 7px;
+    font-weight: bold;
+}
+
+.nav .user a {
+    font-size: 80%;
+    padding: 0 3px;
+}
+
+#logo {
+    width: 120px;
+    height: 60px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -12px -371px;
+}
+
+.nav .location {
+    font-size: 80%;
+    padding: 3px 8px 5px 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.nav .location .loc-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -185px -19px;
+}
+
+.nav .user > *,
+.nav .nav-left > *,
+.nav .location > * {
+    vertical-align: middle;
+}
+
+.nav .user .user-icon {
+    width: 18px;
+    height: 18px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -203px -19px;
+    margin-right: 2px;
+}
+
+.nav .link-group .lvju img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.nav .link-group .lvju {
+    position: relative;
+    margin-left: 18px;
+}
+
+.nav .link-group .lvju .lvju-icon {
+    position: absolute;
+    left: -15px;
+    top: 1px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.heading h1 {
+    font-family: 'FZZongYi-M05S';
+    font-size: 65px;
+    font-weight: lighter;
+}
+
+.heading .sub-heading {
+    font-size: 20px;
+}
+
+.search {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search a {
+    color: lightgray;
+}
+
+.search a:hover {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.search input,
+.search button {
+    outline: none;
+    border: 0;
+    padding: 15px;
+}
+
+.search-bar {
+    font-size: 0;
+}
+
+.search input {
+    width: 80%;
+    border-radius: 3px 0 0 3px;
+}
+
+.search button {
+    width: 20%;
+    color: white;
+    background: #00ae66;
+    border-radius: 0 3px 3px 0;
+}
+
+.search .pointer {
+    position: relative;
+    left: 20px;
+    top: 2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+}
+
+.search a {
+    padding: 5px 15px 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search a.active {
+    color: white;
+}
+
+.anno {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.anno a {
+    color: lightgray;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.anno img {
+    max-width: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.anno a:hover {
+    color: white;
+}
