@@ -265,3 +265,29 @@ form {
 .anno a:hover {
     color: white;
 }
+
+.support {
+    padding: 40px 0;
+}
+
+.support .card {
+    text-align: center;
+}
+
+.support .card img {
+    max-width: 80px;
+}
+
+.support .title {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.2em;
+}
+
+.support .desc {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
