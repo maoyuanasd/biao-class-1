@@ -246,7 +246,7 @@ form {
 }
 
 .anno {
-    margin-top: 100px;
+    margin-top: 137px;
     margin-bottom: 30px;
 }
 
@@ -291,3 +291,189 @@ form {
     line-height: 1.5;
 }
 
+.app {
+    color: rgba(0, 0, 0, 0.8);
+    background: url(./img/bg-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app .col > * {
+    padding: 10px 0;
+}
+
+.app .title {
+    line-height: 1;
+    margin-top: 50px;
+}
+
+.app .sub-title {
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+.app .main-title {
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.app a {
+    display: block;
+}
+
+.app .iphone {
+    background: url(./img/spriteV2_new.png);
+    background-position: -20px -137px;
+    width: 134px;
+    height: 47px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.app .android {
+    background: url(./img/spriteV2_new.png);
+    background-position: -20px -196px;
+    width: 134px;
+    height: 47px;
+    display: block;
+}
+
+.app .erweima img {
+    max-width: 105px;
+    padding: 0;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.app .desc {
+    font-size: 14px;
+}
+
+.app .download {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.reco-area .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reco-area {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.reco-area a {
+    color: inherit;
+    font-size: 14px;
+}
+
+.reco-area .ad-text a:hover {
+    text-decoration-line: underline;
+}
+
+.reco-area .ad-text {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+.reco-area img {
+    width: 100%;
+}
+
+.reco-area .card {
+    position: relative;
+}
+
+.reco-area .main-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.reco-area .sub-title {
+    font-weight: lighter;
+    font-size: 28px;
+    margin-left: 2px;
+}
+
+.reco-area .card {
+    border: thin lightgray solid;
+    box-shadow: 1px 1px 5px lightgray;
+    margin-bottom: 10px;
+}
+
+.reco-area .col {
+    padding: 0 20px;
+}
+
+.ershou .card .title {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.ershou .other,
+.ershou .card .desc {
+    font-size: 13px;
+}
+
+.ershou .card .text {
+    padding: 10px 0 10px 20px;
+}
+
+.ershou .card .title {
+    margin-bottom: 10px;
+}
+
+.card-group {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.ershou .price {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    padding: 3px 7px;
+}
+
+.xiaoqu {
+    background: #eeeef1;
+}
+
+.xiaoqu .pic {
+    overflow: hidden;
+}
+
+.xiaoqu img {
+    height: 200px;
+    transition: all 1s;
+}
+
+.xiaoqu img:hover {
+    transform: scale(1.1);
+}
+
+.xiaoqu .text .title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.xiaoqu .text .price {
+    color: black;
+}
+
+.xiaoqu .text .time {
+    font-size: 12px;
+}
+
+.xiaoqu .card .text {
+    padding: 10px 20px;
+    font-weight: bold;
+}
