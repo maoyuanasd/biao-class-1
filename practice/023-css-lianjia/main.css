@@ -65,7 +65,6 @@ form {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
 }
 
 .row::before,
@@ -93,7 +92,8 @@ form {
 
 .nav {
     /* background: #555; */
-    margin-top: 30px;
+    padding-top: 30px;
+
 }
 
 .nav a {
@@ -178,7 +178,7 @@ form {
 }
 
 .heading h1 {
-    font-family: 'FZZongYi-M05S';
+    font-family: 'FZZongYi-M05S','san-serif';
     font-size: 65px;
     font-weight: lighter;
 }
@@ -228,7 +228,7 @@ button {
 .search .pointer {
     position: relative;
     left: 20px;
-    top: 2px;
+    top: 5px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -248,7 +248,7 @@ button {
 
 .anno {
     margin-top: 137px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .anno a {
@@ -359,7 +359,7 @@ button {
 .reco-area .wrapper,
 .slogan .wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .reco-area {
@@ -386,10 +386,6 @@ button {
     width: 100%;
 }
 
-.reco-area .card {
-    position: relative;
-}
-
 .reco-area .main-title {
     font-weight: bold;
     font-size: 30px;
@@ -403,13 +399,17 @@ button {
 }
 
 .reco-area .card {
+    position: relative;
     border: thin lightgray solid;
     box-shadow: 1px 1px 5px lightgray;
-    margin-bottom: 10px;
 }
 
 .reco-area .col {
     padding: 0 20px;
+}
+
+.ershou .card {
+    margin-bottom: 10px;
 }
 
 .ershou .card .title {
@@ -535,7 +535,6 @@ button {
     background-size: cover;
 }
 
-
 .slogan .main-title {
     font-size: 60px;
     font-weight: bold;
@@ -645,6 +644,6 @@ button {
 }
 
 .footer .meta {
-    margin-top: 25px;
-    margin-bottom: 70px;
+    padding-top: 25px;
+    padding-bottom: 70px;
 }
