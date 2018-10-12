@@ -201,14 +201,15 @@ form {
     color: rgba(255, 255, 255, 0.9)
 }
 
-.search input,
-.search button {
+input,
+button {
     outline: none;
     border: 0;
     padding: 15px;
 }
 
-.search-bar {
+.search-bar,
+.query-bar {
     font-size: 0;
 }
 
@@ -355,7 +356,8 @@ form {
     margin-bottom: 50px;
 }
 
-.reco-area .wrapper {
+.reco-area .wrapper,
+.slogan .wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -369,6 +371,7 @@ form {
     font-size: 14px;
 }
 
+.footer .catg-link .link-group a:hover,
 .reco-area .ad-text a:hover {
     text-decoration-line: underline;
 }
@@ -476,4 +479,172 @@ form {
 .xiaoqu .card .text {
     padding: 10px 20px;
     font-weight: bold;
+}
+
+.xinfang .card {
+    position: relative;
+    
+}
+
+.xinfang .card .text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+}
+
+.xinfang .card .title {
+    font-size: 22px;
+    color: white;
+}
+
+.xinfang .card .price {
+    font-size: 17px;
+    color: #fff2ab;
+}
+
+.xinfang .card .price span {
+    font-weight: normal;
+}
+
+.xinfang .card .promotion {
+    background: #fff2ab;
+    font-size: 17px;
+    padding: 3px 8px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.zhezhao {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.slogan {
+    color: white;
+    background: url(./img/slogan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.slogan .main-title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.slogan .sub-title {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.slogan .title {
+    line-height: 1.1;
+}
+
+.slogan .desc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.query-bar {
+    position: relative;
+}
+
+.query input {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.query button {
+    width: 10%;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.query img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    background: url(./img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .quick-link {
+    font-size: 14px;
+    border-bottom: thin #fbf5f53d solid;
+} 
+
+.footer .quick-link a {
+    color: white;
+    padding: 30px 15px 30px 0;
+}
+
+.footer .quick-link .right {
+    padding: 30px 0;
+    color: #00ae66;
+}
+
+.footer .catg-link,
+.footer .meta {
+    color: #888c8e;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer .catg-link {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    border-bottom: thin #fbf5f53d solid;
+}
+
+.footer .catg-link .link-group a {
+    color: inherit;
+}
+
+.footer .catg span {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.footer .catg span:hover {
+    background: #888c8e;
+    color: white;
+}
+
+.footer .catg-link .link-group a {
+    padding-right: 5px;
+}
+
+.footer .catg-link .catg {
+    margin-bottom: 10px;
+}
+
+.footer .meta > * {
+    vertical-align: middle;
+}
+
+.footer .meta img {
+    margin-right: 5px;;
+}
+
+.footer .meta {
+    margin-top: 25px;
+    margin-bottom: 70px;
 }
