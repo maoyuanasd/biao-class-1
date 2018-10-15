@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+form {
+    margin: 0;
+}
+
+.col {
+    float: left;
+}
+
+.col-2 {
+    width: 10%;
+}
+.col-4 {
+    width: 20%;
+}
+.col-5 {
+    width: 25%;
+}
+.col-6 {
+    width: 30%;
+}
+.col-8 {
+    width: 40%;
+}
+.col-10 {
+    width: 50%;
+}
+.col-12 {
+    width: 60%;
+}
+.col-14 {
+    width: 70%;
+}
+.col-16 {
+    width: 80%;
+}
+.col-18 {
+    width: 90%;
+}
+.col-20 {
+    width: 100%;
+}
+
+.row::before,
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-banner {
+    background: url(./img/top-banner.jpg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav.global {
+    background: #333;
+}
+
+.nav.global a {
+    color: #b0b0b0;
+    font-size: 12px;
+    padding: 10px 10px 10px 0;
+}
+
+.nav.global a:hover {
+    color: white;
+}
+
+.nav.global a::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: #b0b0b0;
+    position: relative;
+    left: 8px;
+}
+
+.nav.global a:last-child::after,
+.nav.global .right a:nth-last-child(2)::after {
+    display: none;
+}
+
+.nav.global .shop-car {
+    padding: 10px 30px;
+    background: #424242;
+}
+
+.nav.global .shop-car:hover {
+    color: #ff7010;
+    background: white;
+}
+
+.nav.page .col-4 > * {
+    vertical-align: middle;
+}
+
+.nav.page .col-4 {
+    margin-top: 12px;
+}
+
+.nav.page img {
+    display: inline-block;
+    width: 100%;;
+}
+
+.nav.page .link-group {
+    padding: 30px 0;
+}
+
+.nav.page .link-group a {
+    color: #333;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.nav.page .link-group a:hover {
+    color:#ff7010;
+}
+
+.nav.page .logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav.page input,
+.nav.page button {
+    padding: 15px;
+    border: thin lightgray solid;
+    outline: none;
+}
+
+.nav.page form {
+    position: relative;
+    margin-top: 22px;
+}
+
+.nav.page button {
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav.page input {
+    width: 100%;
+}
+
+.nav.page .reco > * {
+    font-size: 12px;
+    background: #e7e6e6;
+    padding: 2px;
+    color: #424242;
+}
+
+.nav.page .reco {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+}
+
+.nav.page .reco a:hover {
+    background: #ff7010;
+    color: white;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.slider .wrapper,
+.slider .col-4,
+.slider .col-16 a {
+    height: 450px;
+}
+
+.slider .col-4 {
+    background: rgba(85, 83, 83, 0.3);
+    padding: 22px 0;
+}
+
+.slider a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+}
+
+.slider .wrapper {
+    background: url(./img/slider.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav.page .reco a:hover,
+.slider .link-group a:hover {
+    background: #ff7010;
+}
+
+.jiadian img {
+    width: 100%;
+}
+
+.jiadian {
+    background: #f5f5f5;
+}
+
+.card {
+    background: white;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    /* box-shadow: 1px 1px 1px lightgray; */
+}
+
+.card img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.card .title {
+    color: black;
+    font-size: 15px;
+}
+
+.card .desc {
+    color: #b0b0b0;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card .now-price {
+    color: #ff7010;
+    font-size: 13px;
+}
+
+.card .old-price {
+    font-size: 13px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+.card .promote {
+    width: 70px;
+    padding: 3px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.things .col {
+    padding: 0 10px;
+}
+
+.things {
+    position: relative;
+    overflow: hidden;
+    left: 10px;;
+}
+
+.ad-pic img {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.things .row {
+    margin-bottom: 20px;
+}
+
+.things .last {
+    padding: 0;
+    background: #f5f5f5;
+    border: 0;
+}
+
+.things .last .row {
+    height: 140px;
+    background: white;
+}
+
+.things .last img {
+    width: 70px;
+    margin-top: 35px;
+}
+
+.things .last .text {
+    margin-top: 50px;
+}
+
+.things .last .text .price {
+    color: #ff7010;
+}
+
+.things .last a {
+    width: 100%;
+}
+
+.tips {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.tips .catg-topic {
+    font-size: 22px;
+    color: #424242;
+}
+
+.tips .link-group a {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.tips .link-group a:hover,
+.tips .link-group a.active {
+    color: #ff7010;
+    border-bottom: #ff7010 2px solid;
+}
+
+.page-banner .wrapper {
+    height: 100px;
+    background: url(./img/top-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.firstscreen-reco {
+    margin-bottom: 40px;
+}
+
+.firstscreen-reco .shortcut {
+    background: #cccaca;
+}
+
+.shortcut a {
+    width: 32%;
+    height: 80px;
+    font-size: 12px;
+    color: #707070;
+    text-align: center;
+    padding: 12px;
+}
+
+.shortcut .item11::after,
+.shortcut .item12::after,
+.shortcut .item21::after,
+.shortcut .item22::after {
+    display: block;
+    height: 63px;
+    width: 1px;
+    background: #7a7a7a;
+    content: '';
+    position: relative;
+    top: -53px;
+    left: 67px;
+}
+
+.shortcut .item21::before,
+.shortcut .item22::before,
+.shortcut .item23::before {
+    display: block;
+    height: 1px;
+    width: 67px;
+    background: #7a7a7a;
+    content: '';
+    position: relative;
+    top: -14px;
+    left: -7px;
+}
+
+
+.firstscreen-reco .pic-group .pic {
+    width: 33.333333333333%;
+    height: 160px;
+    padding: 0 10px;
+}
+
+.firstscreen-reco .pic-group img {
+    width: 100%;
+    height: 100%;
+}
+
+.firstscreen-reco .pic-group {
+    position: relative;
+    left: 10px;;
+}
