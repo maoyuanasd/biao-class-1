@@ -20,8 +20,14 @@ form {
     float: left;
 }
 
+.col-1 {
+    width: 5%;
+}
 .col-2 {
     width: 10%;
+}
+.col-3 {
+    width: 15%;
 }
 .col-4 {
     width: 20%;
@@ -32,11 +38,17 @@ form {
 .col-6 {
     width: 30%;
 }
+.col-7 {
+    width: 35%;
+}
 .col-8 {
     width: 40%;
 }
 .col-10 {
     width: 50%;
+}
+.col-11 {
+    width: 55%;
 }
 .col-12 {
     width: 60%;
@@ -73,6 +85,12 @@ form {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.jiadian,
+.shouji,
+.footer .meta {
+    background: #f5f5f5;
 }
 
 .main .reco-area {
@@ -430,11 +448,6 @@ form {
     width: 100%;
 }
 
-.jiadian,
-.shouji {
-    background: #f5f5f5;
-}
-
 .card {
     background: white;
     text-align: center;
@@ -605,3 +618,141 @@ form {
 }
 
 
+
+.footer .quick-link {
+    border-bottom: 1px #a09e9e solid;
+}
+
+.footer .quick-link a {
+    color: #424242;
+    padding: 30px;
+}
+
+.footer .quick-link .col::after {
+    display: inline-block;
+    content: '';
+    height: 20px;
+    width: 1px;
+    background: #a09e9e;
+    position: relative;
+    top: 5px;
+    left: 24px;
+}
+
+.footer .quick-link .col:last-child::after {
+    display: none;
+}
+
+.footer .quick-link,
+.footer .other-link .col-4 {
+    text-align: center;
+}
+
+.footer .other-link {
+    padding: 30px 0;
+}
+
+.footer .other-link .link-card {
+    width: 16.666666666666%;
+}
+
+.footer .other-link a,
+.footer .other-link .time,
+.footer .meta .text {
+    font-size: 13px;
+    color: #707070;
+}
+
+.footer .other-link a {
+    display: block;
+    padding: 5px 0;
+}
+
+.footer .other-link .link-card .title {
+    margin-bottom: 20px;
+}
+
+.footer .other-link .tel {
+    color: #ff7010;
+    font-size: 18px;
+}
+
+.footer .other-link .col-4 a {
+    color: #ff7010;
+    padding: 5px 18px;
+    border: #ff7010 solid 1px;
+    display: inline-block;
+}
+
+.footer .other-link .col-4 a:hover {
+    color: white;
+    background: #ff7010;
+}
+
+.footer .other-link .time {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.footer .other-link .col-4 {
+    position: relative;
+}
+
+.footer .other-link .contact::before {
+    display: inline;
+    content: '';
+    height: 90px;
+    width: 1px;
+    background-color: #a09e9e;
+    position: absolute;
+    left: -9px;
+    top: 13px;
+}
+
+.footer .wrapper {
+    padding: 30px 0;
+}
+
+.footer .meta .logo img {
+    width: 50px;
+}
+
+.footer .meta a {
+    color: #424242;
+    margin-right: 3px;
+}
+
+.footer .meta .text .link-group a::after {
+    display: inline-block;
+    content: '';
+    height: 14px;
+    width: 1px;
+    background: #707070;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.footer .meta .text .link-group a:last-child::after {
+    display: none;
+}
+
+.footer .meta .col-4 img {
+    width: 100%;
+}
+
+.footer .meta .icon a {
+    margin: 0;
+}
+
+.footer .meta .slogan {
+    text-align: center;
+    color: #707070;
+    font-size: 20px;
+    font-family: 'KaiTi', sans-serif;
+    margin-top: 30px;
+}
+
+.footer a:hover {
+    color: #ff7010;
+}
