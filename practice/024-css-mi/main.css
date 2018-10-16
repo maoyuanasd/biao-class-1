@@ -75,6 +75,10 @@ form {
     margin-right: auto;
 }
 
+.main .reco-area {
+    padding-bottom: 40px;
+}
+
 .top-banner {
     background: url(./img/top-banner.jpg);
     height: 100px;
@@ -198,18 +202,26 @@ form {
     margin-bottom: 20px;
 }
 
-.slider .wrapper,
-.slider .col-4,
-.slider .col-16 a {
-    height: 450px;
+.slider .preview .broadcast {
+    display: block;
 }
 
-.slider .col-4 {
+.slider .wrapper,
+.slider .catg-group,
+.slider .preview .broadcast {
+    height: 450px;
+}  
+
+.slider .preview {
+    position: relative;
+}
+
+.slider .catg-group {
     background: rgba(85, 83, 83, 0.3);
     padding: 22px 0;
 }
 
-.slider a {
+.slider .catg-group a {
     display: block;
     color: white;
     padding: 10px 20px;
@@ -221,152 +233,36 @@ form {
     background-size: cover;
 }
 
+.slider .preview .prev,
+.slider .preview .next {
+    display: inline-block;
+    height: 70px;
+    width: 40px;
+}
+
+.slider .preview .prev {
+    background: url(./img/icon-slides.png);
+    background-position: 0px 0px;
+    position: absolute;
+    left: 0;
+    top: 190;
+}
+
+.slider .preview .next {
+    background: url(./img/icon-slides.png);
+    background-position: -44px 0px;
+    position: absolute;
+    right: 0;
+    top: 190;
+}
+
 .nav.page .reco a:hover,
 .slider .link-group a:hover {
     background: #ff7010;
 }
 
-.jiadian img {
-    width: 100%;
-}
-
-.jiadian {
-    background: #f5f5f5;
-}
-
-.card {
-    background: white;
-    text-align: center;
-    padding: 10px;
-    height: 300px;
-    width: 100%;
-    position: relative;
-    /* box-shadow: 1px 1px 1px lightgray; */
-}
-
-.card img {
-    width: 150px;
-    margin-top: 20px;
-}
-
-.card .title {
-    color: black;
-    font-size: 15px;
-}
-
-.card .desc {
-    color: #b0b0b0;
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.card .now-price {
-    color: #ff7010;
-    font-size: 13px;
-}
-
-.card .old-price {
-    font-size: 13px;
-    color: #b0b0b0;
-    text-decoration: line-through;
-}
-
-.card .promote {
-    width: 70px;
-    padding: 3px;
-    background: red;
-    color: white;
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -35px;
-}
-
-.things .col {
-    padding: 0 10px;
-}
-
-.things {
-    position: relative;
-    overflow: hidden;
-    left: 10px;;
-}
-
-.ad-pic img {
-    height: 300px;
-    margin-bottom: 20px;
-}
-
-.things .row {
-    margin-bottom: 20px;
-}
-
-.things .last {
-    padding: 0;
-    background: #f5f5f5;
-    border: 0;
-}
-
-.things .last .row {
-    height: 140px;
-    background: white;
-}
-
-.things .last img {
-    width: 70px;
-    margin-top: 35px;
-}
-
-.things .last .text {
-    margin-top: 50px;
-}
-
-.things .last .text .price {
-    color: #ff7010;
-}
-
-.things .last a {
-    width: 100%;
-}
-
-.tips {
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.tips .catg-topic {
-    font-size: 22px;
-    color: #424242;
-}
-
-.tips .link-group a {
-    margin-left: 15px;
-    font-size: 18px;
-    color: #424242;
-}
-
-.tips .link-group a:hover,
-.tips .link-group a.active {
-    color: #ff7010;
-    border-bottom: #ff7010 2px solid;
-}
-
-.page-banner .wrapper {
-    height: 100px;
-    background: url(./img/top-banner.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-top: 20px;
-}
-
-.firstscreen-reco {
-    margin-bottom: 40px;
-}
-
 .firstscreen-reco .shortcut {
-    background: #cccaca;
+    background: #d3cece;
 }
 
 .shortcut a {
@@ -405,7 +301,6 @@ form {
     left: -7px;
 }
 
-
 .firstscreen-reco .pic-group .pic {
     width: 33.333333333333%;
     height: 160px;
@@ -421,3 +316,274 @@ form {
     position: relative;
     left: 10px;;
 }
+
+.shangou .tips .right > * {
+    padding: 2px 10px;
+    color: #c7c3c3;
+    border: #c7c3c3 2px solid;
+    font-size: 15px;
+}
+
+.shangou .tips .right .next {
+    position: relative;
+    left: -6px;
+}
+
+.shangou .countdown {
+    background: #f1eded;
+    border-top: 1px solid #ef3a3b;
+}
+
+.shangou .indigo {
+    border-top: 1px solid #00c0a5;
+}
+
+.shangou .orange {
+    border-top: 1px solid orange;
+}
+
+.shangou .green {
+    border-top: 1px solid green;
+}
+
+.shangou .blue {
+    border-top: 1px solid royalblue;
+}
+
+.shangou .time {
+    color: #ef3a3b;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.shangou .countdown img {
+    width: 40px;
+}
+
+.shangou .text {
+    font-size: 18px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.shangou .block .hour,
+.shangou .block .minute,
+.shangou .block .second {
+    padding: 5px;
+    background: #707070;
+    color: white;
+}
+
+.shangou .block > * {
+    font-size: 30px;
+}
+
+.shangou .block .maohao {
+    color: #707070;
+}
+
+.shangou .card.item {
+    background: #fafafa;
+}
+
+.shangou .content .col {
+    padding: 0 10px;
+}
+
+.shangou .content {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.shangou .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.jiadian img {
+    width: 100%;
+}
+
+.jiadian,
+.shouji {
+    background: #f5f5f5;
+}
+
+.card {
+    background: white;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.card:hover,
+.smallcard:hover,
+.adcard:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 15px lightgray;
+}
+
+.card img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.card .title,
+.smallcard .title {
+    color: black;
+    font-size: 15px;
+}
+
+.smallcard.more .title {
+    font-size: 18px;
+}
+
+.smallcard.more .desc {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.smallcard .text >* {
+    padding-left: 10px;
+}
+
+.card .desc {
+    color: #b0b0b0;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card .now-price,
+.smallcard .price {
+    color: #ff7010;
+    font-size: 13px;
+}
+
+.card .old-price {
+    font-size: 13px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+.card .promote {
+    width: 70px;
+    padding: 3px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.things .col {
+    padding: 0 10px;
+}
+
+.things {
+    position: relative;
+    overflow: hidden;
+    left: 10px;;
+}
+
+.ad-pic img {
+    height: 300px;
+}
+
+.ad-pic .last {
+    position: relative;
+    top: 20px;
+}
+
+.things .row {
+    margin-bottom: 20px;
+}
+
+.things .last {
+    padding: 0;
+    background: #f5f5f5;
+    border: 0;
+}
+
+.things .last .row {
+    height: 140px;
+    background: white;
+}
+
+.things .last img {
+    width: 70px;
+    margin-top: 35px;
+}
+
+.things .last .text {
+    margin-top: 50px;
+}
+
+.things .last a {
+    width: 100%;
+}
+
+.tips {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.tips .catg-topic {
+    font-size: 22px;
+    color: #424242;
+}
+
+.tips .link-group a {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.tips .link-group a:hover,
+.tips .link-group a.active {
+    color: #ff7010;
+    border-bottom: #ff7010 2px solid;
+}
+
+.shouji .adcard {
+    height: 620px;
+}
+
+.shouji .adcard img {
+    width: 100%;
+    height: 620px;;
+}
+
+.shouji .promote.new {
+    background: #83c44e;
+}
+
+
+.shangou .page-banner .pic {
+    background: url(./img/pagebanner-shangou.jpg);
+}
+
+.jiadian .page-banner .pic {
+    background: url(./img/top-banner.jpg);
+}
+
+.shouji .page-banner .pic {
+    background: url(./img/pagebanner-shouji.jpg);
+}
+
+
+
+.reco-area .page-banner .pic {
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+
