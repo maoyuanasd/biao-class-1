@@ -1,0 +1,23 @@
+@media screen and (max-width: 400px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .nav .wrapper > * {
+        margin-bottom: 10px;
+    }
+
+    .nav .wrapper .user {
+        text-align: left;
+    }
+
+    .main .card .others span {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .write {
+        margin-top: 10px;
+    }
+}
