@@ -1,0 +1,24 @@
+<style>
+    .parent {
+        display: flex;
+        border: 1px red solid;
+        justify-content: flex-start;
+    }
+
+    .child {
+        padding: 10px;
+        background: green;
+        border: 3px black solid;
+    }
+
+    #c {
+        margin-left: auto;
+    }
+</style>
+
+<h2>并没有justif-self这个属性，实现c向右可以设置其margin-left: auto</h2>
+<div class="parent">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>

@@ -1,0 +1,54 @@
+<style>
+    .parent {
+        display: flex;
+        border: 3px red solid;
+    }
+
+    .child {
+        padding: 10px;
+        background: green;
+        border: 3px black solid;
+    }
+
+    .first .child {
+        flex-grow: 1;
+    }
+    
+    .second #b {
+        flex-grow: 1.1;
+    }
+
+    .third .child {
+        flex-grow: 1;
+    }
+
+    .third #b {
+        flex-grow: 2;
+    }
+
+    .third #c {
+        flex-grow: 5;
+    }
+</style>
+
+<h2>A B C 同比例</h2>
+<div class="parent first">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+
+<h2>A C 不指定 给B指定比1大的数字</h2>
+<div class="parent second">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+
+<h2>A:B:C 1:2:5</h2>
+<div class="parent third">
+    <div id="a" class="child">A</div>
+    <div id="b" class="child">B</div>
+    <div id="c" class="child">C</div>
+</div>
+
