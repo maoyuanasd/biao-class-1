@@ -1,0 +1,137 @@
+@media screen and (max-width: 400px){
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .col-sm-10 {
+        width: 83.333333%;
+    }
+
+    .first-screen .nav {
+        padding-top: 10px;
+    }    
+
+    .first-screen .nav .nav-left {
+        text-align: left;
+    }
+
+    .first-screen .nav .nav-right {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .user {
+        text-align: right;
+        margin-top: -52px;
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .heading .sub-heading {
+        font-size: 20px;
+    }
+
+    .search a {
+        padding: 0 5px 5px 0;
+    }
+    .search input {
+        width: 70%;
+    }
+    
+    .search button {
+        width: 30%;
+        padding: 15px 5px;
+    }
+
+    .anno {
+        margin-top: 30px;
+    }
+    
+    .app .col-5 > * {
+        margin-left: 10px;
+    }
+    .card-group > * {
+        margin-bottom: 30px;
+    }
+
+    .reco-area .wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .reco-area .title {
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .reco-area .wrapper .card-group {
+        margin: 0 -10px;
+    }
+
+    .reco-area .main-title {
+        display: block;
+    }
+    .reco-area .ad-text a {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    } 
+
+    .ershou .price {
+        top: 170px;
+    }
+
+    .slogan .title,
+    .slogan .query {
+        text-align: center;
+    }
+
+    .slogan .main-title {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .slogan .sub-title {
+        font-size: 25px;
+    }
+
+    .slogan .query .desc {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .slogan .query-bar {
+        display: inline-block;
+    }
+
+    .query button {
+        right: 16px;
+    }
+
+    .footer .quick-link {
+        padding: 10px;
+    }
+
+    .footer .quick-link .link-group a {
+        padding: 5px;
+    }
+
+    .footer .quick-link .right {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer .catg-link .catg span {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+}

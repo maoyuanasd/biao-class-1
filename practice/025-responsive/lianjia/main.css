@@ -1,0 +1,641 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+.col-2{
+    width: 16.666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666667%;
+}
+.col-12 {
+    width: 100%;
+}
+
+.col {
+    float: left;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::before,
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.first-screen {
+    color: white;
+    background: url(./img/first-screen-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    /* background: #555; */
+    padding-top: 30px;
+
+}
+
+.nav a {
+    color: inherit;
+}
+
+.nav .link-group a {
+    padding: 3px 7px;
+    font-weight: bold;
+}
+
+.nav .user a {
+    font-size: 80%;
+    padding: 0 3px;
+}
+
+#logo {
+    width: 120px;
+    height: 60px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -12px -371px;
+}
+
+.nav .location {
+    font-size: 80%;
+    padding: 3px 8px 5px 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.nav .location .loc-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -185px -19px;
+}
+
+.nav .user > *,
+.nav .nav-left > *,
+.nav .location > * {
+    vertical-align: middle;
+}
+
+.nav .user .user-icon {
+    width: 18px;
+    height: 18px;
+    background: url(./img/spriteV2_new.png);
+    background-position: -203px -19px;
+    margin-right: 2px;
+}
+
+.nav .link-group .lvju img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.nav .link-group .lvju {
+    position: relative;
+    margin-left: 18px;
+}
+
+.nav .link-group .lvju .lvju-icon {
+    position: absolute;
+    left: -15px;
+    top: 1px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.heading h1 {
+    font-family: 'FZZongYi-M05S','san-serif';
+    font-size: 65px;
+    font-weight: lighter;
+}
+
+.heading .sub-heading {
+    font-size: 20px;
+}
+
+.search {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search a {
+    color: lightgray;
+}
+
+.search a:hover {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+input,
+button {
+    outline: none;
+    border: 0;
+    padding: 15px;
+}
+
+.search-bar,
+.query-bar {
+    font-size: 0;
+}
+
+.search input {
+    width: 80%;
+    border-radius: 3px 0 0 3px;
+}
+
+.search button {
+    width: 20%;
+    color: white;
+    background: #00ae66;
+    border-radius: 0 3px 3px 0;
+}
+
+.search .pointer {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+}
+
+.search a {
+    padding: 5px 15px 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search a.active {
+    color: white;
+}
+
+.anno {
+    margin-top: 137px;
+    padding-bottom: 30px;
+}
+
+.anno a {
+    color: lightgray;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.anno img {
+    max-width: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.anno a:hover {
+    color: white;
+}
+
+.support {
+    padding: 40px 0;
+}
+
+.support .card {
+    text-align: center;
+}
+
+.support .card img {
+    max-width: 80px;
+}
+
+.support .title {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.2em;
+}
+
+.support .desc {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.app {
+    color: rgba(0, 0, 0, 0.8);
+    background: url(./img/bg-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app .col > * {
+    padding: 10px 0;
+}
+
+.app .title {
+    line-height: 1;
+    margin-top: 50px;
+}
+
+.app .sub-title {
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+.app .main-title {
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.app a {
+    display: block;
+}
+
+.app .iphone {
+    background: url(./img/spriteV2_new.png);
+    background-position: -20px -137px;
+    width: 134px;
+    height: 47px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.app .android {
+    background: url(./img/spriteV2_new.png);
+    background-position: -20px -196px;
+    width: 134px;
+    height: 47px;
+    display: block;
+}
+
+.app .erweima img {
+    max-width: 105px;
+    padding: 0;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.app .desc {
+    font-size: 14px;
+}
+
+.app .download {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.reco-area .wrapper,
+.slogan .wrapper {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.reco-area {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.reco-area a {
+    color: inherit;
+    font-size: 14px;
+}
+
+.footer .catg-link .link-group a:hover,
+.reco-area .ad-text a:hover {
+    text-decoration-line: underline;
+}
+
+.reco-area .ad-text {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+.reco-area img {
+    width: 100%;
+}
+
+.reco-area .main-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.reco-area .sub-title {
+    font-weight: lighter;
+    font-size: 28px;
+    margin-left: 2px;
+}
+
+.reco-area .card {
+    position: relative;
+    border: thin lightgray solid;
+    box-shadow: 1px 1px 5px lightgray;
+}
+
+.reco-area .col {
+    padding: 0 20px;
+}
+
+.ershou .card {
+    margin-bottom: 10px;
+}
+
+.ershou .card .title {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.ershou .other,
+.ershou .card .desc {
+    font-size: 13px;
+}
+
+.ershou .card .text {
+    padding: 10px 0 10px 20px;
+}
+
+.ershou .card .title {
+    margin-bottom: 10px;
+}
+
+.card-group {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.ershou .price {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    padding: 3px 7px;
+}
+
+.xiaoqu {
+    background: #eeeef1;
+}
+
+.xiaoqu .pic {
+    overflow: hidden;
+}
+
+.xiaoqu img {
+    height: 200px;
+    transition: all 1s;
+}
+
+.xiaoqu img:hover {
+    transform: scale(1.1);
+}
+
+.xiaoqu .text .title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.xiaoqu .text .price {
+    color: black;
+}
+
+.xiaoqu .text .time {
+    font-size: 12px;
+}
+
+.xiaoqu .card .text {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.xinfang .card {
+    position: relative;
+    
+}
+
+.xinfang .card .text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+}
+
+.xinfang .card .title {
+    font-size: 22px;
+    color: white;
+}
+
+.xinfang .card .price {
+    font-size: 17px;
+    color: #fff2ab;
+}
+
+.xinfang .card .price span {
+    font-weight: normal;
+}
+
+.xinfang .card .promotion {
+    background: #fff2ab;
+    font-size: 17px;
+    padding: 3px 8px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.zhezhao {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.slogan {
+    color: white;
+    background: url(./img/slogan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slogan .main-title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.slogan .sub-title {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.slogan .title {
+    line-height: 1.1;
+}
+
+.slogan .desc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.query-bar {
+    position: relative;
+}
+
+.query input {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.query button {
+    width: 10%;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.query img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    background: url(./img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .quick-link {
+    font-size: 14px;
+    border-bottom: thin #fbf5f53d solid;
+} 
+
+.footer .quick-link a {
+    color: white;
+    padding: 30px 15px 30px 0;
+}
+
+.footer .quick-link .right {
+    padding: 30px 0;
+    color: #00ae66;
+}
+
+.footer .catg-link,
+.footer .meta {
+    color: #888c8e;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer .catg-link {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    border-bottom: thin #fbf5f53d solid;
+}
+
+.footer .catg-link .link-group a {
+    color: inherit;
+}
+
+.footer .catg span {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.footer .catg span:hover {
+    background: #888c8e;
+    color: white;
+}
+
+.footer .catg-link .link-group a {
+    padding-right: 5px;
+}
+
+.footer .catg-link .catg {
+    margin-bottom: 10px;
+}
+
+.footer .meta > * {
+    vertical-align: middle;
+}
+
+.footer .meta img {
+    margin-right: 5px;;
+}
+
+.footer .meta {
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
