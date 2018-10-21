@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f6f6f6;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav .navparent,
+.card-group .cgparent,
+.server,
+.support .supparent,
+.catg-link .clparent,
+.meta .lan,
+.meta .other {
+    display: flex;
+}
+
+.nav .navparent > *,
+.card-group .cgparent > *,
+.server > *,
+.support .supparent > * {
+    flex-grow: 1;
+}
+
+.card img,
+.server img {
+    max-width: 100%;
+}
+
+.nav {
+    background: white;
+}
+
+.nav .logo i {
+    color: #eb0028;
+    font-size: 40px;
+}
+
+.nav .logo a {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.nav .link-group {
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav .link-group a {
+    color: #828282;
+    padding: 20px;
+}
+
+.nav .link-group a:hover {
+    border-bottom: #eb0028 solid 2px;
+    color: #eb0028;
+}
+
+.nav .user {
+    text-align: right;
+}
+
+.user a {
+    color: #828282;
+    padding: 19px 10px;
+}
+
+.user i {
+    font-size: 22px;
+}
+
+.user a:hover {
+    color: black;
+}
+
+
+.broadcast {
+    background: url(./img/fs-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 555px;
+}
+
+.broadcast .content {
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    top: 250px;
+    color: white;
+}
+
+.broadcast .content > * {
+    margin-bottom: 10px;
+}
+
+.broadcast .content .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.broadcast .content .desc {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.broadcast .content span {
+    font-size: 13px;
+    padding: 10 30px;
+    border: white solid 1px;
+    display: inline-block;
+}
+
+.broadcast .content .info {
+    font-size: 15px;
+}
+
+.broadcast a {
+    display: block;
+    height: 555px;;
+}
+
+.broadcast i {
+    font-size: 40px;
+    opacity: 0.5;
+    color: white;
+}
+
+.broadcast .left {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+
+.broadcast .right {
+    position: absolute;
+    top: 300px;
+    right: 80px;
+}
+
+.server .item {
+    position: relative;
+}
+
+.server .text {
+    font-weight: 500;
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    left: 20px;;
+}
+
+.activity {
+    background: url(./img/shot.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.activity .content {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 170px;
+}
+
+.activity .title {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.activity button {
+    color: white;
+    border: 2px white solid;
+    padding: 10px 30px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.activity button:hover {
+    background: white;
+    color: black;
+}
+
+.card-group {
+    margin: 80px 0;
+}
+
+.card-group .card {
+    margin: 0 10px;
+    background: white;
+    color: #828282;
+}
+
+.card a {
+    color: inherit;
+}
+
+.card .text {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.card .title {
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.card .desc {
+    font-size: 12px;
+}
+
+.card {
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 10px 20px #d3d2d2;
+}
+
+.support {
+    background: white;
+    padding: 30px;
+    border-bottom: 1px #ddd solid;
+}
+
+.support .item {
+    text-align: center;
+}
+
+.support .item .iconfont {
+    font-size: 50px;
+    color: #7db93f;
+}
+
+.support .item .text {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.catg-link .clparent .link-group {
+    flex-grow: 3;
+    display: flex;
+    padding: 10px;
+}
+
+.catg-link .clparent .link-group .link-card {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.catg-link .clparent .link-group a {
+    display: block;
+    color: #828282;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.catg-link .clparent .link-group .title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.catg-link .contact {
+    padding: 40px 60px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.contact .tel {
+    font-size: 20px;
+    color: black;
+}
+
+.contact button {
+    padding: 15px 60px;
+    color: black;
+    border: 1px black solid;
+    background: transparent;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.contact button:hover {
+    color: white;
+    background: black;
+}
+
+.contact .other i {
+    font-size: 25px;
+    color: inherit;
+    padding: 5px;
+}
+
+.contact .other {
+    margin-top: 10px;
+}
+
+.contact i.icon-weixin {
+    color: #50B674;
+}
+
+.contact i.icon-weibo {
+    color: #EA5D5C;
+}
+
+.meta .lan .link,
+.meta .other .kexin {
+    margin-left: auto;
+}
+
+.meta .lan .link > * {
+    padding: 0 5px;
+    color: #828282;
+    font-size: 12px;
+}
+
+.meta .language .text {
+    color: #828282;
+    position: relative;
+    bottom: 12px;
+    left: 3px;
+}
+
+.meta .lan {
+    padding: 30px 0;
+    border-bottom: thin #ddd solid;
+    border-top: thin #ddd solid;
+
+}
+
+.meta .other {
+    padding: 30px 0;
+} 
+
+.meta .other .copyright {
+    font-size: 12px;
+    color: #828282;
+    margin-bottom: 8px;
+}
+
+.meta .other span {
+    position: relative;
+    bottom: 3px;
+}
+
+.meta .other .kexin img {
+    width: 80px;
+}
