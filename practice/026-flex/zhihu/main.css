@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f6f6;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+form {
+    margin: 0;
+}
+
+.col {
+    flex-grow: 1;
+}
+.col-1 {
+    flex-basis: 8.333333%;
+}
+.col-2{
+    flex-basis: 16.666667%;
+}
+.col-3{
+    flex-basis: 25%;
+}
+.col-4{
+    flex-basis: 33.333333%;
+}
+.col-5 {
+    flex-basis: 41.666667%;
+}
+.col-6 {
+    flex-basis: 50%;
+}
+.col-7 {
+    flex-basis: 58.333333%;
+}
+.col-8 {
+    flex-basis: 66.666667%;
+}
+.col-9 {
+    flex-basis: 75%;
+}
+.col-10 {
+    flex-basis: 83.333333%;
+}
+.col-11 {
+    flex-basis: 91.666667%;
+}
+.col-12 {
+    flex-basis: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav {
+    background: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.nav svg {
+    fill: #0084ff;
+}
+
+.nav a {
+    padding: 0 13px;
+}
+
+.nav a:hover {
+    color: #0088cc;
+}
+
+.nav .link-group a {
+    margin-top: 5px;
+}
+
+.nav form {
+    margin-top: 2px;
+}
+
+.nav input{
+    background-color: #f6f6f6;
+    border: thin solid #bfbaba;
+    outline: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+    width: 70%
+}
+
+.nav button {
+    color: white;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 15px;
+    width: 25%;
+    margin-left: 5px;
+    outline: 0;
+}
+
+input:focus {
+    border: 1px #0084ff solid;
+}
+
+.nav .user .iconfont {
+    font-size: 20px;
+}
+
+.nav .user img {
+    width: 25px;
+}
+
+.nav .user .xiaoxi,
+.nav .user .huihua {
+    position: relative;
+    top: -3px;
+}
+
+.content .preview .pic img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card {
+    border-bottom: thin #999 solid;
+    padding: 15px;
+    background: white;
+    border-radius: 2px;
+}
+
+.content .tips {
+    padding: 0;
+}
+
+.content .tips span a {
+    padding: 10px 0;
+}
+
+.content .tips span a.active {
+    border-bottom: #0084ff 3px solid;
+    font-weight: bold;
+}
+
+.content .tips span {
+    padding: 0 15px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card .text {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.card .preview {
+    margin: 10px 0;
+}
+
+.card .preview > * {
+    padding-right: 10px;
+}
+
+.card .others button {
+    border: 0;
+    padding: 3px 8px ;
+    color: #999;
+    background: white;
+    outline: none;
+}
+
+.card .others span button {
+    background: #e5f2ff;
+    color: #0084ff;
+}
+
+.main .content div:last-child {
+    border: 0;
+}
+
+.other .write,
+.other .link-group {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.other .num {
+    font-size: 13px;
+    color: #999;
+    background: #f6f6f6;
+    padding: 0 5px;
+}
+
+.other .write .item {
+    padding: 15px;
+    text-align: center;
+}
+
+.other .write .draft {
+    padding: 0 20px;
+    
+}
+
+.other .write .draft a {
+    display: block;
+    padding: 15px;
+    border-top: thin #999 solid;
+}
+
+.other .link-group {
+    padding: 10px 0;
+}
+
+.other .link-group a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.other .link-group a:hover {
+    background: #f6f6f6;
+}
+
+.other .write .draft a i,
+.other .link-group a i {
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.other .meta-info > * {
+    line-height: 1.8em;
+    font-size: 13px;
+    color: #999;
+}
+
+.other .meta-info a {
+    color: inherit;
+}
+
+.main .all > * {
+    padding: 0 5px;
+}
+
+.main .all {
+    margin-left: -5px;
+    margin-right: -5px;
+}
