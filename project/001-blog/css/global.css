@@ -1,0 +1,98 @@
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: url(../img/sidebar-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.content {
+    margin: 0;
+    width: calc(100vw - 270px);
+    float: right;
+}
+
+.sidebar > * {
+    text-align: center;
+}
+
+.sidebar .user {
+    margin-top: 50px;
+}
+
+.sidebar .user img {
+    width: 100px;
+}
+
+.sidebar a {
+    display: block;
+    color: inherit;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.sidebar .link-group a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .link-group a i {
+    margin-right: 15px;
+}
+
+.sidebar .search {
+    margin-top: 30px;
+}
+
+.sidebar i {
+    color: white;
+}
+
+.sidebar input,
+.sidebar button {
+    outline: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    height: 30px;
+}
+
+.sidebar .search input {
+    width: 50%;
+    color: white;
+}
+
+.content .content-box {
+    margin: 20px 100px 20px 20px;
+}
+
+.content .card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.content .backtop i {
+    font-size: 30px;
+    color: gray;
+}
+
+.content .backtop {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.footer .meta {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 15px;
+    padding-top: 10px;
+    border-top: thin solid lightgray;
+}

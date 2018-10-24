@@ -1,0 +1,107 @@
+.card.article {
+    padding: 50px;
+}
+
+.article .title,
+.article .info {
+    text-align: center;
+}
+
+.article .title {
+    font-size: 35px;
+}
+
+.article .desc {
+    line-height: 1.5em;
+    margin-top: 30px;
+}
+
+.card.turn-page {
+    border: none;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+}
+
+.card.turn-page a {
+    background: white;
+    padding: 8px 20px;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.card.turn-page .next {
+    float: right;
+}
+
+.card.comment .published h3 {
+    margin-top: 0;
+}
+
+.card.comment .published .item {
+    padding: 10px 0;
+    margin: 0 10px;
+    border-top: thin dashed lightgray;
+    position: relative;
+}
+
+.card.comment .published .item:last-child {
+    border-bottom: thin dashed lightgray;
+}
+
+.card.comment .published .name {
+    margin-right: 20px;
+}
+
+.card.comment .published .time {
+    font-size: 13px;
+    color: #aaa;
+    font-weight: lighter;
+}
+
+.card.comment .published .text {
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+.card.comment .published .reply {
+    color: white;
+    background: #aaa;
+    font-size: 13px;
+    padding: 3px 8px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.card.comment .publish form {
+    margin: 10px;
+}
+
+.card.comment .publish textarea {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.card.comment .publish .person-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.card.comment .publish .person-info > * {
+    width: 32%;
+    padding: 8px;
+}
+
+.card.comment .publish button {
+    color: white;
+    background: #555;
+    border: none;
+}
+
+.card.comment .publish button:hover {
+    background: royalblue;
+}

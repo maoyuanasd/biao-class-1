@@ -1,0 +1,22 @@
+.content .card .title {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.content .card .title a:hover {
+    color: #6470a5;
+}
+
+.content .card .info {
+    color: #777;
+    font-size: 13px;
+}
+
+.content .card .info > * {
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.content .card .desc {
+    color: #333;
+}
