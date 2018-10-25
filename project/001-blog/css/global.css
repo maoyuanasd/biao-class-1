@@ -1,3 +1,7 @@
+a:hover {
+    color: royalblue;
+}
+
 .sidebar {
     width: 250px;
     position: fixed;
