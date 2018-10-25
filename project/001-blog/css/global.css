@@ -81,6 +81,20 @@ a:hover {
     box-shadow: 0 0 3px #aaa;
 }
 
+.card .title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.card.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.card .box {
+    margin-bottom: 50px;
+}
+
 .content .backtop i {
     font-size: 30px;
     color: gray;

@@ -34,37 +34,37 @@
     float: right;
 }
 
-.card.comment .published h3 {
+.card .published h3 {
     margin-top: 0;
 }
 
-.card.comment .published .item {
+.card .published .item {
     padding: 10px 0;
     margin: 0 10px;
     border-top: thin dashed lightgray;
     position: relative;
 }
 
-.card.comment .published .item:last-child {
+.card .published .item:last-child {
     border-bottom: thin dashed lightgray;
 }
 
-.card.comment .published .name {
+.card .published .name {
     margin-right: 20px;
 }
 
-.card.comment .published .time {
+.card .published .time {
     font-size: 13px;
     color: #aaa;
     font-weight: lighter;
 }
 
-.card.comment .published .text {
+.card .published .text {
     font-weight: lighter;
     margin-top: 8px;
 }
 
-.card.comment .published .reply {
+.card .published .reply {
     color: white;
     background: #aaa;
     font-size: 13px;
@@ -75,34 +75,34 @@
     cursor: pointer;
 }
 
-.card.comment .publish form {
+.card .publish form {
     margin: 10px;
 }
 
-.card.comment .publish textarea {
+.card .publish textarea {
     width: 100%;
     height: 60px;
     font-size: 18px;
     padding: 5px 10px;
 }
 
-.card.comment .publish .person-info {
+.card .publish .person-info {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-.card.comment .publish .person-info > * {
+.card .publish .person-info > * {
     width: 32%;
     padding: 8px;
 }
 
-.card.comment .publish button {
+.card .publish button {
     color: white;
     background: #555;
     border: none;
 }
 
-.card.comment .publish button:hover {
+.card .publish button:hover {
     background: royalblue;
 }

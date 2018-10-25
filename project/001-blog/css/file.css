@@ -1,12 +1,6 @@
-.card.file,
 .year-card {
     display: flex;
     justify-content: center;
-}
-
-.card.file h2 {
-    font-size: 35px;
-    text-align: center;
 }
 
 .card.file a {
