@@ -1,0 +1,101 @@
+.container {
+    max-width: 1000px;
+}
+
+.container-mid {
+    max-width: 700px;
+}
+
+.first-screen {
+    height: 400px;
+    background: url(../img/fs-bg.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background: rgba(255,255,255,0.7);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .dropdown-menu {
+    min-width: 100%;
+}
+
+.navbar a {
+    color: inherit;
+}
+
+.first-screen .slogan {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.first-screen .search input,
+.first-screen .search button {
+    border-radius: 0;
+    height: 40px;;
+}
+
+.first-screen .search input {
+    width: 75%; 
+    background: rgba(255,255,255,0.7);
+}
+
+.first-screen .search form button {
+    width: 25%; 
+}
+
+.first-screen .search .shop-cart button {
+    width: 100%;
+}
+
+.reco-area {
+    padding: 30px 0;
+}
+
+a.thumbnail:hover {
+    text-decoration: none;
+}
+
+.reco-area .title {
+    margin: 10px 0;
+}
+
+.reco-area .title .main-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.reco-area .title .more {
+    margin-top: 16px;
+}
+
+.reco-area .thumbnail .text {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reco-area .thumbnail .text .name {
+    font-size: 1.2em;
+}
+
+.reco-area .thumbnail .text .price {
+    margin: 3px 0;
+}
+
+.reco-area.diban,
+.reco-area.clothes,
+.footer {
+    background: #eee;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
