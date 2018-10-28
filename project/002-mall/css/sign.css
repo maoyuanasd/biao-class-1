@@ -1,0 +1,18 @@
+.navbar {
+    background: #eeeeee;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.forget {
+    margin-top: 10px;
+}
+
+.sign-in .title,
+.sign-up .title {
+    margin-bottom: 20px;
+}
