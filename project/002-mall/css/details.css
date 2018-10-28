@@ -1,0 +1,59 @@
+.navbar {
+    background: #eee;
+}
+
+.details {
+    font-size: 15px;
+}
+
+.details img {
+    max-width: 100%;
+}
+
+.details .choose {
+    padding: 30px 0;
+    border-bottom: 2px dashed #eee;
+}
+
+.details .choose .pic-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.details .choose .pic-box .pic {
+    border: 1px #eee solid;
+}
+
+.details .choose .join-cart .name {
+    font-size: 25px;
+}
+
+.details .choose .join-cart > * {
+    padding: 5px 0;
+}
+
+.details .more-info {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.details .more-info .title {
+    text-align: center;
+    font-size: 30px;
+    background: #eee;
+}
+
+.details .more-info .info-box > * {
+    margin: 15px 0;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.details .more-info h3 {
+    text-align: center;
+}
+
+.details .more-info .text {
+    padding: 20px;
+}
