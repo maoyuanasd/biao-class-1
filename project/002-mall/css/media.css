@@ -1,0 +1,23 @@
+@media screen and (max-width: 767px) {
+    .first-screen {
+        height: auto;
+        background: none;
+    }
+
+    .first-screen .slogan {
+        margin: 10px 0;
+    }
+
+    .slogan img {
+        width: 100%;
+    }
+
+    .search input {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer {
+        position: static;
+    }
+}
