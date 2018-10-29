@@ -1,0 +1,32 @@
+.shop-cart .cart-main .list {
+    padding-bottom: 10px;
+    border-bottom: 1px #aaa dashed;
+}
+
+.shop-cart tbody {
+    font-size: 13px;
+}
+
+.shop-cart tbody .total {
+    font-weight: bold;
+}
+
+.shop-cart .calculate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shop-cart .calculate .cal-catg {
+    line-height: 1.8em;
+    margin: 10px;
+}
+
+.shop-cart .calculate .cal-catg span {
+    padding-left: 20px;
+}
+
+.shop-cart .calculate .cal-catg .final {
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
