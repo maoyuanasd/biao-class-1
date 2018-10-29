@@ -1,0 +1,109 @@
+@media screen and (max-width: 800px) {
+    .col-md-10 {
+        flex-basis: 83.333333%;
+    }
+
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+
+    .sidebar {
+        width: 150px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: url(../img/sidebar-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    
+    .content {
+        margin: 0;
+        width: calc(100vw - 170px);
+        float: right;
+    }
+
+    .content .content-box {
+        margin: 20px;
+    }
+
+    .card.article {
+        padding: 15px;
+    }
+
+    .card .publish .person-info {
+        display: block;
+    }
+
+    .card .publish .person-info > * {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .col-sm-12 {
+        flex-basis: 100%;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        background: url(../img/sidebar-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .sidebar .user {
+        margin-top: 0;
+    }
+
+    .sidebar .user h1 {
+        margin-bottom: 0;
+    }
+    .sidebar .user img {
+        display: none;
+    }
+
+    .sidebar .link-group a {
+        display: inline-block;
+    }
+
+    .sidebar .search {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .content .content-box {
+        margin: 5px;
+    }
+
+    .card.article {
+        padding: 15px;
+    }
+
+    .card .published .time {
+        display: block;
+    }
+
+    .card .published .reply {
+        display: inline-block;
+        position: static;
+        margin-top: 5px;
+    }
+
+    .article .title {
+        font-size: 25px;
+    }
+
+    .year-card {
+        display: block;
+    }
+}
