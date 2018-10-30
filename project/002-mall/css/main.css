@@ -79,7 +79,7 @@ a.thumbnail:hover {
     margin-top: 16px;
 }
 
-.reco-area .thumbnail .text {
+.thumbnail .text {
     padding: 10px;
     text-align: center;
     margin-bottom: 10px;
