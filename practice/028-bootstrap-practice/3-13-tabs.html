@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab">
+            <li><a href="#first" data-toggle="tab">第一项</a></li>
+            <li><a href="#second" data-toggle="tab">第二项</a></li>
+            <li><a href="#third" data-toggle="tab">第三项</a></li>
+            <li><a href="#fourth" data-toggle="tab">第四项</a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane" id="first">
+                第一项的内容
+            </div>
+            <div class="tab-pane" id="second">
+                慕课网是做什么的？<br>互联网技能教育，免费的哦
+            </div>
+            <div class="tab-pane" id="third">
+                第三项的内容
+            </div>
+            <div class="tab-pane" id="fourth">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+    </script>
+</body>
+
+</html>
