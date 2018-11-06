@@ -1,0 +1,52 @@
+<script>
+    let NAME = 'fujing';
+    let NICKNAME = 'xiaofu';
+    let age = 23;
+    let pi = 3.1415926;
+    let b;
+    let c = undefined;
+    let d = null;
+    console.log(b);
+    console.log(d);
+    console.log(NAME + NICKNAME);
+    console.log(age + pi);
+    console.log(age + b); //NaN: Not a Numbe
+    console.log(age + d); //23
+    
+    xx = NAME+pi;
+    console.log(xx);
+    console.log(typeof(xx)); //string
+    
+
+    let person = {
+        NAME: 'fujing',
+        age: 23,
+        sex: 'woman',
+        teacher: {
+            NAME:'zhangjie',
+            age:44,
+        }
+    }
+    console.log(person.age);
+    person.age = 55;
+    console.log(person.age);
+    console.log(person.teacher.NAME);
+
+
+
+    let arr = [1, 2, 3, [5,6,7]];
+    console.log(arr);
+    console.log(arr[2]); //3
+    arr[2] = 10;
+    console.log(arr[2]); //3
+    console.log(arr[3][2]); //7
+
+    console.log(typeof (NAME)); //string
+    console.log(typeof (age)); //number
+    console.log(typeof (pi)); //number
+    console.log(typeof (b)); //undefined
+    console.log(typeof (d)); //object
+    console.log(typeof (person)); //object
+    console.log(typeof (arr)); //object
+
+</script>

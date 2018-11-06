@@ -1,0 +1,131 @@
+<script>
+    /*定义两个变量，让他们的和等于10，并将他们的和打印出来。*/
+    let a = 4;
+    let b = 6;
+    c = a + b;
+    console.log(c);
+
+    /*取到并打印下列变量中的666*/
+    let arr1 = [1, 2, 666,];
+    console.log(arr1[2]);
+
+    /*取到并打印下列变量中的666*/
+    let arr2 = [
+        1,
+        2,
+        [666],
+    ];
+    console.log(arr2[2][0]);
+
+    /*取到并打印下列变量中的666*/
+    let arr3 = [
+        [
+            [1, 5],
+            ['whh', 666],
+        ],
+    ];
+    console.log(arr3[0][1][1]);
+
+    /*取到并打印下列变量中的666*/
+    let arr4 = [
+        [
+            [100, 'emmm'],
+            [
+                2, 'yo', [666],
+            ],
+        ],
+    ];
+    console.log(arr4[0][1][2][0]);
+
+    /*取到并打印下列变量中的666*/
+    let obj1 = {
+        a: 1,
+        b: 2,
+        c: 666,
+    };
+    console.log(obj1.c);
+
+    /*取到并打印下列变量中的666*/
+    let obj2 = {
+        a: 1,
+        b: {
+            yo: {
+                em: '6',
+                ha: 666,
+            },
+        },
+    };
+    console.log(obj2.b.yo.ha);
+
+    /*取到并打印下列变量中的666*/
+    let obj3 = {
+        a: 1,
+        b: {
+            yo: [
+                2,
+                'la',
+                {
+                    muhaha: '~',
+                    a: 666,
+                },
+            ],
+        },
+    };
+    console.log(obj3.b.yo[2].a);
+
+    /*取到并打印下列变量中的666*/
+    let obj4 = {
+        a: 1,
+        b: {
+            x: [
+                2, { ya: [666] },
+            ],
+        },
+    };
+    console.log(obj4.b.x[1].ya[0]);
+
+    /*找到下方数据中所有的数组，并分别打印出每个数组的长度*/
+    let obj5 = {
+        a: [3, 5],
+        b: ['yo', 1],
+    };
+    console.log(obj5.a);
+    console.log(obj5.b);
+    console.log(obj5.a.length);
+    console.log(obj5.b.length);
+
+    /*找到下方数据中所有的数组，并打印出每个数组的长度的和*/
+    let obj6 = {
+        a: { foo: 2 },
+        yo: [3, 5],
+        b: {
+            la: {
+                name: 'wood',
+                x: [5, 'a', 'c'],
+                muhaha: ['bob', 'huahua'],
+                length: 100,
+            },
+        },
+    };
+    console.log(obj6.yo);
+    console.log(obj6.b.la.x);
+    console.log(obj6.b.la.muhaha);
+    console.log(obj6.yo.length + obj6.b.la.x.length + obj6.b.la.muhaha.length);
+
+    /*找到下方数据中所有的对象，并分别打印出每个对象中的值为字符串的属性*/
+    let obj7 = {
+        la: 'Ha',
+        v: 2,
+        p: [2, 5],
+        b: {
+            a: {
+                name: 'White',
+                yo: [5, 'a', 'c'],
+                length: 100,
+                map: true,
+            },
+        },
+    };
+    console.log(obj7.la);
+    console.log(obj7.b.a.name);
+</script>
