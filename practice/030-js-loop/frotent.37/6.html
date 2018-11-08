@@ -1,0 +1,17 @@
+<script>
+    let arr=['Yo', 'Em', 1, 'La', 4, 8, 'Ha', 11, 5];
+    let num=0;
+    let str='';
+
+    for (let i=0;i<arr.length;i++) {
+        let item = arr[i];
+        if(typeof(item) == 'number') {
+            num += arr[i];
+        } else if(typeof(item) == 'string') {
+            str += arr[i];
+        }
+    }
+    console.log(num);
+    console.log(str);
+    
+</script>

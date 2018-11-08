@@ -1,0 +1,9 @@
+<script>
+    breakhere: for (let i = 0; i < 5; i++) {
+        console.log('i: ' + i);
+        for (let j = 0; j < 5; j++) {
+            console.log('    j: ' + j);
+            break breakhere; //打断外部循环，如果只有break; 只会打断内层循环 
+        }
+    }
+</script>

@@ -1,0 +1,30 @@
+<script>
+    let arr = ['a1', 'a2', ['b1', 'b2', ['c1', 'c2', 'c3'], 'b3'], 'a3'];
+    let i, j, k;
+    let str1 = '';
+    let str2 = '';
+    let str3 = '';
+
+    for (i = 0; i < arr.length; i++) {
+        if (typeof (arr[i]) == 'string') {
+            str1 += arr[i] + ' ';
+        } else {
+            for (j = 0; j < arr[i].length; j++) {
+                if (typeof (arr[i][j]) == 'string') {
+                    str2 += arr[i][j] + ' ';
+                } else {
+                    for (k = 0; k < arr[i][j].length; k++) {
+                        if (typeof (arr[i][j][k]) == 'string') {
+                            str3 += arr[i][j][k] + ' ';
+                        };
+                    };
+                };
+            };
+        };
+    };
+
+    console.log('第一级：' + str1);
+    console.log('第二级：' + str2);
+    console.log('第三级：' + str3);
+
+</script>
