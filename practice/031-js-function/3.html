@@ -1,0 +1,20 @@
+<script>
+    let arr1 = [
+        '王花花',
+        '刘备备',
+        '李拴蛋',
+        '赵可爽',
+    ];
+    let arr2 = [1, 2, 3, 4];
+
+    function breaker(aim, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            let item = arr[i];
+            if (item === aim)
+                break;
+            console.log(item);
+        }
+    }
+
+    breaker(3, arr2);
+</script>

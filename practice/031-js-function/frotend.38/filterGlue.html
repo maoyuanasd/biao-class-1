@@ -1,0 +1,14 @@
+<script>
+    function filterGlue(arr) {
+        let str = '';
+        for (let i = 0; i < arr.length; i++) {
+            if (typeof (arr[i]) == 'string') {
+                str += arr[i];
+            }
+        }
+        return str;
+    }
+
+    console.log(filterGlue([1, 2, 'Yo', 'ha']));
+    console.log(filterGlue([1, 'a', 2, 'b']));
+</script>

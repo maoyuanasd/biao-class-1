@@ -1,0 +1,27 @@
+<script>
+    let arr = [
+        {
+            name: '王花花',
+            salary: 100,
+        },
+        {
+            name: '李拴蛋',
+            salary: 200,
+        },
+        {
+            name: '牛备备',
+            salary: 300,
+        },
+    ];
+
+    function getNameList(money) {
+        let namelist = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].salary > money) {
+                namelist.push(arr[i].name);
+            }
+        }
+        console.log(namelist);
+    }
+    getNameList(200);
+</script>

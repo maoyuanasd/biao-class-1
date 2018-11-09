@@ -1,0 +1,16 @@
+<script>
+    let arr = ['a1', 'a2', ['b1', 'b2', ['c1', 'c2', 'c3'], 'b3'], 'a3'];
+
+    function arrstring(arr) {
+        let filtered = [];
+        let level = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let item = arr[i];
+            if (typeof (item) == string) {
+                filtered[level]
+            }
+        }
+    }
+
+    arrstring(arr);
+</script>

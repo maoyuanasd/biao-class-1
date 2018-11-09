@@ -1,0 +1,14 @@
+<script>
+    function filterOdd(arr) {
+        let newarr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2) {
+                newarr.push(arr[i]);
+            }
+        }
+        return newarr;
+    }
+
+    console.log(filterOdd([5, 2, 3]));
+    console.log(filterOdd([1, 2, 3, 4]));
+</script>

@@ -1,0 +1,18 @@
+<script>
+    let list = [
+        '王花花',
+        '李拴蛋',
+        '赵可爽',
+    ];
+
+    function glue(list, connector) {
+        let str = '';
+        for (let i = 0; i < list.length - 1; i++) {
+            str += list[i] + connector;
+        }
+        console.log(str + list[list.length - 1]);
+    }
+
+    glue(list, ', ');
+    glue(list, '-');
+</script>
