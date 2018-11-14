@@ -1,0 +1,62 @@
+<script>
+    function eachNumber(arr, fn) {
+        for (let i = 0; i < arr.length; i++) {
+            fn(arr[i]);
+        }
+    }
+
+    function evenNumber(arr) {
+        let result = [];
+        eachNumber(arr, function (it) {
+            if (it % 2 == 0) {
+                result.push(it);
+            }
+        });
+        return result;
+    }
+
+    function oddNumber(arr) {
+        let result = [];
+        eachNumber(arr, function (it) {
+            if (it % 2) {
+                result.push(it);
+            }
+        });
+        return result;
+    }
+
+    function sum(arr) {
+        let result = 0;
+        eachNumber(arr, function (it) {
+            result += it;
+        });
+        return result;
+    }
+
+    function max(arr) {
+        let result = arr[0];
+        eachNumber(arr, function (it) {
+            if (it > result) {
+                result = it;
+            }
+        });
+        return result;
+    }
+
+    function min(arr) {
+        let result = arr[0];
+        eachNumber(arr, function (it) {
+            if (it < result) {
+                result = it;
+            }
+        });
+        return result;
+    }
+
+    console.log(evenNumber([1, 2, 3, 4]));
+    console.log(oddNumber([1, 2, 3, 4]));
+    console.log(sum([1, 2, 3, 4]));
+    console.log(max([1, 2, 3, 4]));
+    console.log(min([1, 2, 3, 4]));
+
+</script>

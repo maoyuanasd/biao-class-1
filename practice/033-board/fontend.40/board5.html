@@ -1,0 +1,46 @@
+<style>
+    :root {
+        font-size: 15px;
+    }
+
+    #board {
+        background: black;
+        font-size: 2rem;
+        color: red;
+        padding: 10px;
+        display: inline-block;
+        border: 2px solid;
+    }
+</style>
+
+<div id="board">
+    <span id="text">
+        
+    </span>
+</div>
+
+<script>
+    let flag = 0;
+    let board = document.getElementById('board');
+    let text = document.getElementById('text');
+    let service = ['广告牌','第二个','第三个','第四个','第五个'];
+    let current = 0;
+    text.innerText = service[current];
+    
+    setInterval(function(){
+        if(!flag) {
+            text.style.opacity = 0;
+            board.style.borderColor = 'black';
+            flag = 1;
+        } else {
+            text.style.opacity = 1;
+            board.style.borderColor = 'red';
+            current++;
+            if(current >= service.length){
+                current = 0;
+            }
+            text.innerText = service[current];
+            flag = 0;
+        };
+    }, 500)
+</script>

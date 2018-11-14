@@ -1,0 +1,17 @@
+<div id="title">测试</div>
+<p>aaaaaaaaa</p>
+<div id="box">
+    <p>dddddddd</p>
+    <p>eeeeeeee</p>
+</div>
+
+<script>
+    let x = document.getElementById('title');
+    document.write(x.innerHTML);
+
+    let y = document.getElementById('box');
+    let z = y.getElementsByTagName('p');
+
+    document.write(z[0].innerHTML);
+
+</script>

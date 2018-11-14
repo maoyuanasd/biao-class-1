@@ -1,0 +1,24 @@
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: block;
+}
+
+.navbar .navbar-left img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.carousel {
+    margin-top: -48px;
+}
+
+.carousel .item .carousel-caption {
+    font-size: 43px;
+}
+

@@ -1,0 +1,42 @@
+<script>
+    function numberModifier(num, fn) {
+        if (typeof (num) != 'number')
+            throw '请传入数字类型';
+        return fn(num);
+    }
+
+    function increment(num) {
+        return numberModifier(num, function (it) {
+            return it + 1;
+        });
+    }
+    console.log(increment(1));
+    console.log(increment(2));
+
+    function double(num) {
+        return numberModifier(num, function (it) {
+            return it * 2;
+        });
+    }
+    console.log(double(1));
+    console.log(double(10));
+
+    function decuple(num) {
+        return numberModifier(num, function (it) {
+            return num * 10;
+        });
+    }
+    console.log(decuple(1));
+    console.log(decuple(10));
+
+    function list(num) {
+        let str = [];
+        return numberModifier(num, function (it) {
+            for (let i = 1; i <= num; i++) {
+                str.push(i);
+            };
+            return str;
+        });
+    }
+    console.log(list(3));
+</script>

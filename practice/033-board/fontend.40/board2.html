@@ -1,0 +1,36 @@
+<style>
+    .board {
+        background: black;
+        border: 2px solid;
+        color: red;
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="board">
+        <span class="text">
+            广告牌闪烁
+        </span>
+    </div>
+</body>
+
+<script>
+    const board = document.querySelector('.board');
+    const text = board.querySelector('.text');
+
+    setInterval(function () {
+        let visible = getComputedStyle(text).opacity == '1';
+        if (visible) {
+            text.style.opacity = 0;
+            board.style.borderColor = 'transparent';
+        }
+        else {
+            text.style.opacity = 1;
+            board.style.borderColor = 'inherit';
+        }
+    }, 500);
+</script>

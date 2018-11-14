@@ -1,0 +1,39 @@
+<style>
+    #board {
+        background: black;
+        font-size: 20px;
+        color: red;
+        padding: 10px;
+        display: inline-block;
+        border: 2px solid;
+    }
+</style>
+
+<div id="board">
+    <span id="text">
+        广告牌
+        <span id="counter"></span>
+    </span>
+</div>
+
+<script>
+    let flag = 0;
+    let board = document.getElementById('board');
+    let text = document.getElementById('text');
+    let counter = document.getElementById('counter');
+    let count = 0;
+
+    setInterval(function(){
+        if(!flag) {
+            text.style.opacity = 0;
+            board.style.borderColor = 'black';
+            flag = 1;
+        } else {
+            text.style.opacity = 1;
+            board.style.borderColor = 'red';
+            flag = 0;
+            count++;
+        };
+        counter.innerText = count;
+    }, 500)
+</script>
