@@ -1,0 +1,67 @@
+<style>
+    :root {
+        font-size: 15px;
+    }
+
+    .board {
+        background: black;
+        color: red;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid;
+    }
+</style>
+
+<div class="board">
+    <span class="text">
+        广告牌
+        <span class="counter"></span>
+    </span>
+</div>
+
+<script>
+    let board = document.querySelector('.board');
+    let text = board.querySelector('.text');
+    let counter = text.querySelector('.counter');
+    let count = 0;
+
+    boot();
+
+    function boot() {
+        startFlash();
+    }
+
+    function isVisible() {
+        return getComputedStyle(text).opacity != 0;
+    }
+
+    function toggleText(onShow) {
+        if (isVisible()) {
+            text.style.opacity = 0;
+        } else {
+            text.style.opacity = 1;
+            onShow();
+        }
+    }
+
+    function toggleBorder() {
+        if (isVisible()) {
+            board.style.borderColor = 'transparent';
+        } else {
+            board.style.borderColor = 'inherit';
+        }
+    }
+
+    function incrementCount() {
+        count++;
+        counter.textContent = count;
+    }
+
+    function startFlash() {
+        setInterval(function () {
+            isVisible();
+            toggleBorder();
+            toggleText(incrementCount);
+        }, 500)
+    }
+</script>

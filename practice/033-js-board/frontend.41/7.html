@@ -1,0 +1,68 @@
+<style>
+    :root {
+        font-size: 15px;
+    }
+
+    .board {
+        background: black;
+        color: red;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid;
+    }
+</style>
+
+<div class="board">
+    <span class="text">广告牌</span>
+</div>
+
+<script>
+    let board = document.querySelector('.board');
+    let text = board.querySelector('.text');
+    let flag=1;
+    boot();
+
+    function boot() {
+        startFlash();
+    }
+
+    function isVisible() {
+        return getComputedStyle(text).opacity != 0;
+    }
+
+    function toggleText() {
+        if (isVisible()) {
+            text.style.opacity = 0;
+        } else {
+            text.style.opacity = 1;
+        }
+    }
+
+    function toggleBorder() {
+        if (isVisible()) {
+            board.style.borderColor = 'transparent';
+        } else {
+            board.style.borderColor = 'inherit';
+        }
+    }
+
+    function toggleTextContent() {
+        if(!isVisible()){
+            if(flag) {
+                text.textContent = '第二个';
+            } else {
+                text.textContent = '广告牌';
+            }
+            flag = !flag;
+        }
+    }
+
+    function startFlash() {
+        setInterval(function () {
+            isVisible();
+            toggleBorder();
+            toggleTextContent();
+            toggleText();
+        }, 500)
+    }
+</script>

@@ -1,0 +1,72 @@
+<style>
+    :root {
+        font-size: 15px;
+    }
+
+    .board {
+        background: black;
+        color: red;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid;
+        width: 100px;
+        text-align: center;
+    }
+</style>
+
+<div class="board">
+    <span class="text"></span>
+</div>
+
+<script>
+    let board = document.querySelector('.board');
+    let text = board.querySelector('.text');
+    let arr = ['第一个', '第二个', '第三个', '第四个', '第五个'];
+    let current = 0;
+    text.textContent = arr[current];
+
+    boot();
+
+    function boot() {
+        startFlash();
+    }
+
+    function isVisible() {
+        return getComputedStyle(text).opacity != 0;
+    }
+
+    function toggleText() {
+        if (isVisible()) {
+            text.style.opacity = 0;
+        } else {
+            text.style.opacity = 1;
+        }
+    }
+
+    function toggleBorder() {
+        if (isVisible()) {
+            board.style.borderColor = 'transparent';
+        } else {
+            board.style.borderColor = 'inherit';
+        }
+    }
+
+    function toggleArr() {
+        if (!isVisible()) {
+            current++;
+            if (current >= arr.length) {
+                current = 0;
+            }
+            text.textContent = arr[current];
+        }
+    }
+
+    function startFlash() {
+        setInterval(function () {
+            isVisible();
+            toggleBorder();
+            toggleArr();
+            toggleText();
+        }, 500)
+    }
+</script>
