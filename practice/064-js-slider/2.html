@@ -1,0 +1,67 @@
+<style>
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .container {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slider .item {
+        opacity: 0;
+        display: block;
+        position: absolute;
+        transition: all 0.5s;
+    }
+</style>
+
+<div class="container">
+    <div class="slider">
+        <a href="" class="item">
+            <img src="./img/a.png" alt="">
+        </a>
+        <a href="" class="item">
+            <img src="./img/b.png" alt="">
+        </a>
+        <a href="" class="item">
+            <img src="./img/c.png" alt="">
+        </a>
+    </div>
+</div>
+
+<script>
+    let slider = document.querySelector('.slider');
+    let item = slider.querySelectorAll('.item');
+    let current = 0;
+    let lastIndex = item.length - 1;
+
+    setInterval(function () {
+        if (current >= item.length) {
+            current = 0;
+        }
+
+        let prev;
+        if (current == 0) {
+            prev = item[lastIndex];
+        } else {
+            prev = item[current - 1];
+        }
+
+        let next = item[current];
+
+        if (prev) {
+            prev.style.opacity = 0;
+        }
+        next.style.opacity = 1;
+
+        current++;
+    }, 1000)
+
+</script>
