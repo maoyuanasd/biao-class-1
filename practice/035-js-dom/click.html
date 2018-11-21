@@ -1,0 +1,24 @@
+<style>
+    #a {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: lightgray;
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+</style>
+
+<div id="a"></div>
+<button id="toggle">显示/隐藏</button>
+
+<script>
+    let a = document.querySelector('#a');
+    let toggle = document.querySelector('#toggle')
+
+    toggle.addEventListener('click', function(){
+        a.hidden = !a.hidden;
+    })
+</script>

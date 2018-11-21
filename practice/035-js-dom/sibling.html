@@ -1,0 +1,33 @@
+<div id="a" class="a">
+    <div class="a1">
+        <div class="a11"></div>
+        <div class="a22"></div>
+    </div>
+    <div class="a2"></div>
+</div>
+<div class="b">
+    <div class="b1"></div>
+    <div class="b2"></div>
+</div>
+<div class="c"></div>
+
+<script>
+    let a1 = document.querySelector('.a1');
+    let a2 = document.querySelector('.a2');
+
+
+    console.dir(a1);
+    console.log(a1.children);
+    console.log(a1.nextElementSibling);
+    console.log(a1.firstElementChild);
+    console.log(a1.lastElementChild);
+    
+    
+    console.log(a2.previousElementSibling);
+    console.log(a2.nextElementSibling);
+    
+    console.log(a2.parentElement);
+    
+    console.log(a2.closest(".a"));
+
+</script>

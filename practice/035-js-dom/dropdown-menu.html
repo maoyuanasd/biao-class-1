@@ -1,0 +1,43 @@
+<style>
+    .toggle {
+        background: lightgray;
+        outline: none;font-size: 15px;
+        border: 0;
+        padding: 5px 10px;
+    }
+
+    .dropdown {
+        background:  #666;
+        width: 100px;
+    }
+
+    .dropdown a {
+        display: block;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    .dropdown a:hover {
+        background: #999;
+    }
+</style>
+
+<button class="toggle">查看更多</button>
+<div class="dropdown">
+    <a href="">扫一扫</a>
+    <a href="">加好友</a>
+    <a href="">搜索</a>
+    <a href="">帮助</a>
+    <a href="">关于我们</a>
+</div>
+
+<script>
+    let toggle = document.querySelector('.toggle');
+    let dropdown = document.querySelector('.dropdown');
+
+    dropdown.hidden = 1;
+    toggle.addEventListener('click', function(){
+        dropdown.hidden = !dropdown.hidden;
+    })
+</script>

@@ -1,0 +1,26 @@
+<style>
+    .box {
+        color: white;
+        background: black;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 10px;
+    }
+</style>
+
+<div class="box">
+    <h2>小黑板</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab nisi culpa sed deserunt nostrum praesentium illum officia quia neque soluta itaque accusamus saepe, at aliquid mollitia provident nemo magnam.</p>
+</div>
+
+<script>
+    let box = document.querySelector('.box');
+
+    window.addEventListener('keyup', function(event){
+        if(event.key == 'q' && event.ctrlKey) {
+            box.hidden = !box.hidden;
+        }
+    })
+</script>
