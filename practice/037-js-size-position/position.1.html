@@ -1,0 +1,41 @@
+<style>
+    div {
+        padding: 20px;
+        border: 10px solid black;
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        overflow: auto;
+    }
+
+    form {
+        position: relative;
+        border: 5px red solid;
+    }
+</style>
+
+<form>
+    <!--position不为static的话 就是a的offsetParent-->
+    <div id="a">A</div>
+</form>
+
+<div id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis repudiandae possimus voluptates
+    autem a cupiditate, iure, aliquam ipsum necessitatibus nemo obcaecati dicta ratione explicabo, culpa minus odit
+    rerum. Magni!log
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure odio sunt esse quae quaerat aperiam quisquam
+    repudiandae? Quo reprehenderit est itaque saepe illo eum vero officiis in, aliquid rerum!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem aut illo voluptate. Ipsum, atque sunt
+    obcaecati ex quis cupiditate esse. Accusamus temporibus dolorem, nihil et quo culpa qui odio.
+</div>
+
+<script>
+    let a = document.querySelector('#a');
+
+    console.log('a.offsetTop: ' + a.offsetTop);
+    console.log('a.offsetLeft: ' + a.offsetLeft);
+    console.log(a.getBoundingClientRect());
+
+    console.log('b.scrollTop: ' + b.scrollTop);
+    console.log('b.scrollLeft: ' + b.scrollLeft);
+
+</script>

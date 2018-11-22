@@ -1,0 +1,41 @@
+<style>
+    div {
+        padding: 20px;
+        border: 10px solid black;
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        overflow: auto;
+    }
+</style>
+
+<div id="a">A</div>
+
+<div id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis repudiandae possimus voluptates
+    autem a cupiditate, iure, aliquam ipsum necessitatibus nemo obcaecati dicta ratione explicabo, culpa minus odit
+    rerum. Magni!log
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure odio sunt esse quae quaerat aperiam quisquam
+    repudiandae? Quo reprehenderit est itaque saepe illo eum vero officiis in, aliquid rerum!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem aut illo voluptate. Ipsum, atque sunt
+    obcaecati ex quis cupiditate esse. Accusamus temporibus dolorem, nihil et quo culpa qui odio.
+</div>
+
+<script>
+    let a = document.querySelector('#a');
+
+    console.log('a.clientWidth: ' + a.clientWidth);
+    console.log('a.clientHeight: ' + a.clientHeight);
+    console.log('a.offsetWidth: ' + a.offsetWidth);
+    console.log('a.offsetHeight: ' + a.offsetHeight);
+    console.log('a.scrollHeight: ' + a.scrollHeight);
+    
+    console.log('...');
+    
+
+    console.log('b.clientWidth: ' + b.clientWidth);
+    console.log('b.clientHeight: ' + b.clientHeight);
+    console.log('b.offsetWidth: ' + b.offsetWidth);
+    console.log('b.offsetHeight: ' + b.offsetHeight);
+    console.log('b.scrollHeight: ' + b.scrollHeight);
+
+</script>

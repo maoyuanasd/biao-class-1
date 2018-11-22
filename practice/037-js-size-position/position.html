@@ -1,0 +1,25 @@
+<style>
+    #a {
+        padding: 20px;
+        border: 10px solid black;
+        display: inline-block;
+    }
+
+    form {
+        position: relative;
+        border: 5px red solid;
+    }
+</style>
+
+<form>  <!--position不为static的话 就是a的offsetParent-->
+    <div id="a">A</div>
+</form>
+
+<script>
+    let a = document.querySelector('#a');
+
+    console.log(a.offsetTop);
+    console.log(a.offsetLeft);
+    console.log(a.getBoundingClientRect());
+    
+</script>
