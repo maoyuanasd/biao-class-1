@@ -1,0 +1,30 @@
+<style>
+    div {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div id="a">a
+    <div id="b">b
+        <div id="c">c</div>
+    </div>
+</div>
+
+<script>
+    let a = document.querySelector('#a');
+    let b = document.querySelector('#b');
+    let c = document.querySelector('#c');
+
+    a.addEventListener('click', function () {
+        console.log('A');
+    }, false) //默认为冒泡
+
+    b.addEventListener('click', function () {
+        console.log('B');
+    })
+
+    c.addEventListener('click', function () {
+        console.log('C');
+    })
+</script>

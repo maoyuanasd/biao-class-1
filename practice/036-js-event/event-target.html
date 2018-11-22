@@ -1,0 +1,38 @@
+<style>
+        div {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    
+    <div id="a">a
+        <div id="b">b
+            <div id="c">c</div>
+        </div>
+    </div>
+    
+    <script>
+        let a = document.querySelector('#a');
+        let b = document.querySelector('#b');
+        let c = document.querySelector('#c');
+    
+        a.addEventListener('click', function (e) {
+            console.log(a === e.currentTarget);
+            console.log(this);
+            console.log(e.currentTarget); //当前
+            console.log(e.target); //源
+            console.log('A');
+        }) 
+    
+        b.addEventListener('click', function (e) {
+            console.log(e.currentTarget);
+            console.log(e.target);
+            console.log('B');
+        })
+    
+        c.addEventListener('click', function (e) {
+            console.log(e.currentTarget);
+            console.log(e.target);
+            console.log('C');
+        })
+    </script>
