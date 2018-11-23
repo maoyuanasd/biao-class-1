@@ -1,0 +1,231 @@
+<style>
+    #toggle {
+        background: lightgray;
+        outline: none;
+        font-size: 15px;
+        border: 0;
+        padding: 10px 20px;
+    }
+
+    p {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    .hikari-modal {
+        padding: 25px 100px;
+        border: 2px solid black;
+        position: fixed;
+        background: white;
+        z-index: 1000;
+    }
+
+    .hikari-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+</style>
+
+<button id="toggle">收藏</button>
+<div id="modal">
+    确定要收藏吗？<br><br>
+    <button id="yes">确定</button>
+    <button id="no">取消</button>
+</div>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint dolorum quo! Officiis minus nisi atque
+    deserunt natus dolor, dignissimos optio ipsam laboriosam beatae quae rem, libero quasi tenetur laborum.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius fugit ullam doloremque vero aspernatur, explicabo
+    quidem aliquid impedit quod et, delectus voluptates modi maxime facere nesciunt saepe, repellat dolor laudantium!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis ipsam dignissimos nemo provident
+    possimus laboriosam assumenda consequatur eum eligendi, fugit odio nihil quam at temporibus quis quo omnis tempora?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis consequatur placeat ratione! Voluptates
+    itaque distinctio sunt, dolore cupiditate officiis error vitae pariatur voluptatum maiores ullam nam? Repellat,
+    adipisci modi.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolorem recusandae odit officia esse amet
+    illum ipsum rem aspernatur alias illo consectetur deserunt animi repudiandae minus. Delectus, harum! Reprehenderit,
+    eius!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint dolorum quo! Officiis minus nisi atque
+    deserunt natus dolor, dignissimos optio ipsam laboriosam beatae quae rem, libero quasi tenetur laborum.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius fugit ullam doloremque vero aspernatur, explicabo
+    quidem aliquid impedit quod et, delectus voluptates modi maxime facere nesciunt saepe, repellat dolor laudantium!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis ipsam dignissimos nemo provident
+    possimus laboriosam assumenda consequatur eum eligendi, fugit odio nihil quam at temporibus quis quo omnis tempora?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis consequatur placeat ratione! Voluptates
+    itaque distinctio sunt, dolore cupiditate officiis error vitae pariatur voluptatum maiores ullam nam? Repellat,
+    adipisci modi.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolorem recusandae odit officia esse amet
+    illum ipsum rem aspernatur alias illo consectetur deserunt animi repudiandae minus. Delectus, harum! Reprehenderit,
+    eius!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint dolorum quo! Officiis minus nisi atque
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolorem recusandae odit officia esse amet
+    illum ipsum rem aspernatur alias illo consectetur deserunt animi repudiandae minus. Delectus, harum! Reprehenderit,
+    eius!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint dolorum quo! Officiis minus nisi atque
+    deserunt natus dolor, dignissimos optio ipsam laboriosam beatae quae rem, libero quasi tenetur laborum.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius fugit ullam doloremque vero aspernatur, explicabo
+    quidem aliquid impedit quod et, delectus voluptates modi maxime facere nesciunt saepe, repellat dolor laudantium!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis ipsam dignissimos nemo provident
+    possimus laboriosam assumenda consequatur eum eligendi, fugit odio nihil quam at temporibus quis quo omnis tempora?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis consequatur placeat ratione! Voluptates
+    itaque distinctio sunt, dolore
+</p>
+
+<script>
+    let toggle = document.querySelector('#toggle');
+    let modal = document.querySelector('#modal');
+    let yes = document.querySelector('#yes');
+    let no = document.querySelector('#no');
+    let mask = document.createElement('div');
+
+
+    boot('#toggle', '#modal');
+
+    /*弹出层启动函数*/
+    function boot(toggle, modal) {
+        initModal();
+        initMask();
+        bindOpen();
+        bindClose();
+    }
+
+    /*初始化弹出层*/
+    function initModal() {
+        modal.hidden = 1;
+        modal.classList.add('hikari-modal');
+    }
+
+    /*初始化遮罩*/
+    function initMask() {
+        mask.classList.add('hikari-mask');
+        mask.hidden = 1;
+        document.body.appendChild(mask);
+    }
+
+    /*弹出层打开*/
+    function bindOpen() {
+        toggle.addEventListener('click', function () {
+            setVisible();
+            repositionModal('top-center', 150, 0); //自定义 位置、y轴偏移、x轴偏移
+        });
+    }
+
+    /*弹出层关闭*/
+    function bindClose() {
+
+        /*点击确定弹出层关闭*/
+        yes.addEventListener('click', function () {
+            setInvisible();
+        });
+
+        /*点击取消弹出层关闭*/
+        no.addEventListener('click', function () {
+            setInvisible();
+        });
+
+        /*esc键弹出层关闭*/
+        window.addEventListener('keyup', function (e) {
+            if (e.keyCode == 27) {
+                setInvisible();
+            }
+        });
+    }
+
+    /*弹出层和遮罩显示*/
+    function setVisible() {
+        modal.hidden = 0;
+        mask.hidden = 0;
+    }
+
+    /*弹出层和遮罩隐藏*/
+    function setInvisible() {
+        modal.hidden = 1;
+        mask.hidden = 1;
+    }
+
+    /*Modal显示时重定位*/
+    /*position:
+    top-left top-center top-right 
+    left-center center right-center
+    bottom-left bottom-center bottom-right
+     */
+    function repositionModal(position = 'center', yOffset = 0, xOffset = 0) {
+
+        //获取窗口宽高
+        let windowWidth = window.innerWidth;
+        let windowHeight = window.innerHeight;
+
+        //获取弹出层宽高
+        let modalWidth = modal.offsetWidth;
+        let modalHeight = modal.offsetHeight;
+
+        switch (position) {
+
+            //左上
+            case 'top-left':
+                modal.style.left = xOffset + 'px';
+                modal.style.top = yOffset + 'px';
+                break;
+
+            //中上
+            case 'top-center':
+                modal.style.left = windowWidth / 2 - modalWidth / 2 + xOffset + 'px';
+                modal.style.top = yOffset + 'px';
+                break;
+
+            //右上
+            case 'top-right':
+                modal.style.right = xOffset + 'px';
+                modal.style.top = yOffset + 'px';
+                break;
+
+            //左中
+            case 'left-center':
+                modal.style.left = xOffset + 'px';
+                modal.style.top = windowHeight / 2 - modalHeight / 2 + yOffset + 'px';
+                break;
+
+            //中间
+            case 'center':
+                modal.style.left = windowWidth / 2 - modalWidth / 2 + xOffset + 'px';
+                modal.style.top = windowHeight / 2 - modalHeight / 2 + yOffset + 'px';
+                break;
+
+            //右中
+            case 'right-center':
+                modal.style.right = xOffset + 'px';
+                modal.style.top = windowHeight / 2 - modalHeight / 2 + yOffset + 'px';
+                break;
+
+            //左下
+            case 'bottom-left':
+                modal.style.left = xOffset + 'px';
+                modal.style.bottom = yOffset + 'px';
+                break;
+
+            //中下
+            case 'bottom-center':
+                modal.style.left = windowWidth / 2 - modalWidth / 2 + xOffset + 'px';
+                modal.style.bottom = yOffset + 'px';
+                break;
+
+            //右下
+            case 'bottom-right':
+                modal.style.right = xOffset + 'px';
+                modal.style.bottom = yOffset + 'px';
+                break;
+
+            //默认中间
+            default:
+                modal.style.left = windowWidth / 2 - modalWidth / 2 + xOffset + 'px';
+                modal.style.top = windowHeight / 2 - modalHeight / 2 + yOffset + 'px';
+        }
+    }
+
+</script>
