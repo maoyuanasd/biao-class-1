@@ -83,16 +83,36 @@
     let yes = document.querySelector('#yes');
     let no = document.querySelector('#no');
     let mask = document.createElement('div');
+    let config;
 
+    /*默认配置*/
+    const defaultConfig = {
+        position: 'center',
+        yOffset: -150,
+        xOffset: 0,
+        keyToHide: 'Escape',
+    }
 
-    boot('#toggle', '#modal');
+    /*用户定义js开始*/
+    boot('#toggle', '#modal', {
+        //position: 'top-left',
+        //yOffset: 150,
+        //xOffset: 0,
+        //keyToHide: 'q',
+    });
 
     /*弹出层启动函数*/
-    function boot(toggle, modal) {
+    function boot(toggle, modal, custom = {}) {
+        loadConfig(custom);
         initModal();
         initMask();
         bindOpen();
         bindClose();
+    }
+
+    /*加载用户设置*/
+    function loadConfig(custom) {
+        config = Object.assign({}, defaultConfig, custom);
     }
 
     /*初始化弹出层*/
@@ -112,7 +132,7 @@
     function bindOpen() {
         toggle.addEventListener('click', function () {
             setVisible();
-            repositionModal('top-center', 150, 0); //自定义 位置、y轴偏移、x轴偏移
+            repositionModal(config.position, config.yOffset, config.xOffset); //自定义 位置、y轴偏移、x轴偏移
         });
     }
 
@@ -131,7 +151,7 @@
 
         /*esc键弹出层关闭*/
         window.addEventListener('keyup', function (e) {
-            if (e.keyCode == 27) {
+            if (e.key == config.keyToHide) {
                 setInvisible();
             }
         });
